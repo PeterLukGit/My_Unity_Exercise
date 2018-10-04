@@ -30,3 +30,13 @@ PostProcessing
 4.直接在旁邊渲染出來，然後呈現給玩家
 
 https://blog.csdn.net/RICKShaozhiheng/article/details/78314520
+
+## 3.反射探針(reflection Probe)
+
+reflection Probe會將自己範圍內所偵測到，
+能夠被反射的物件，將它更新到場景的skybox中。
+
+簡單就是
+reflection Probe 會製作在範圍內的 cube map
+在範圍內的能反射物體就會套用此cube map
+用以節省效能，因為不用計算整個大場景
