@@ -31,7 +31,7 @@ PostProcessing
 
 https://blog.csdn.net/RICKShaozhiheng/article/details/78314520
 
-## 3.反射探針(reflection Probe)
+## 4.反射探針(reflection Probe)
 
 reflection Probe會將自己範圍內所偵測到，
 能夠被反射的物件，將它更新到場景的skybox中。
