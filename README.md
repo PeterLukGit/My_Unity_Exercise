@@ -9,6 +9,12 @@
 
 教學網址
 
+重大:: 
+Texture 的 UV 意思是說
+"以輸入數值"來對應相對圖片顏色 例:輸入(0.5,0.5)就是這張圖片正中間顏色
+
+UV Coordinates 指的就是 這模型的UV 所以 Texture 的 UV 數值需加入 該模型 UV
+
 https://space.bilibili.com/20508311/#/channel/detail?cid=15815
 
 插件
