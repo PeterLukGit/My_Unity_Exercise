@@ -581,6 +581,7 @@
     <None Include="Assets\練習\15扫光效果\Line.shader" />
     <None Include="Assets\練習\16模型拉扯\transform_shader.shader" />
     <None Include="Assets\練習\17被遮挡X光效果\mask.shader" />
+    <None Include="Assets\練習\18Texture UV 含意\texture.shader" />
     <None Include="Assets\練習\ReadMe.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
