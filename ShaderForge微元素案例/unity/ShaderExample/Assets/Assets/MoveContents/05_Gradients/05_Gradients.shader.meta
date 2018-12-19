@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 043faef8f6bb04a4aa52cf58f921d3e6
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _Pattern: {fileID: 2800000, guid: adf777c58f11b7b4ea7a851260cb6245, type: 3}
+  - _Gradients: {fileID: 2800000, guid: c50821d106653b648b1c3fafd1507044, type: 3}
+  - _Gradients_copy: {fileID: 2800000, guid: c50821d106653b648b1c3fafd1507044, type: 3}
+  - _Pattern_copy: {fileID: 2800000, guid: adf777c58f11b7b4ea7a851260cb6245, type: 3}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,102 @@
+.tpay-inde-main-wp {
+    border: 2px solid #0E0E0E !important;
+    background: #202020 !important;
+}
+.tpay-inde-main, .tpay-box-main {
+    background: #2d2e31 !important;
+    border: none !important;
+}
+.tpay-inde-main-l {
+    background: #202020 !important;
+}
+.tpay-inde-main-r {
+    background: #202020 !important;
+}
+.tpay-left-info-line .tpay-left-top-icon {
+    top: 0 !important;
+    background: none !important;
+}
+.tpay-left-info-line .tpay-left-bottom-icon {
+    bottom: 0 !important;
+    background: none !important;
+}
+.tpay-left-info-line {
+    border-left: 1px dotted #464646 !important;
+}
+.tpay-left-mask {
+    background: none !important;
+}
+.tpay-inde-main-l-avatar {
+    width: 110px !important;
+    overflow: hidden !important;
+	height: auto !important;
+	margin-left: 14px !important;
+}
+.tpay-inde-main-l-avatar img {
+	width:100px !important;
+	height:auto !important;
+	padding: 1px !important;
+    border: #5E6A88 2px solid !important;
+}
+.tpay-inde-main-r-nav li.on a {
+    color: #BDBDBD !important;
+}
+.tpay-inde-main-r-nav li.on, .tpay-inde-main-r-nav li:hover {
+    border-bottom: #565656 solid 1px !important;
+}
+.tpay-inde-main-r-nav li a:hover {
+    text-decoration: none !important;
+    color: #616161 !important;
+}
+.tpay-button {
+    background: #FFA013 !important;
+}
+.tpay-leftBorder {
+    display: none !important;
+}
+.tpay-input {
+    width: 364px !important;
+    height: 50px !important;
+    padding-left: 12px !important;
+    line-height: 50px !important;
+    transition: none !important;
+    font-size: 16px !important;
+    box-shadow: none !important;
+    vertical-align: middle !important;
+    border: none !important;
+    font-family: Arial,Helvetica !important;
+    outline: none !important;
+    color: #A0A0A0 !important;
+}
+.tpay-top {
+    overflow: hidden !important;
+    padding: 15px 0px !important;
+    display: none !important;
+}
+.tpay-middle {
+    border-radius: 0px !important;
+    border: 2px solid #0E0E0E !important;
+    background: #202020 !important;
+}
+.tpay-content {
+    overflow: hidden !important;
+    background: #2D2D2D !important;
+    border-bottom: 3px solid #191919 !important;
+}
+.tpay-choose-top {
+    display: none !important;
+}
+.tpay-choose-item {
+    border: 2px solid #0E0E0E !important;
+    background: #202020 !important;
+}
+.tpay-paytype img {
+    border-radius: 0px !important;
+}
+.tpay-haschoose-typelist span {
+    background: #2589f3 !important;
+}
+.tpay-haschoose-submit button {
+    background: #FFA013 !important;
+    border-radius: 0px !important;
+}

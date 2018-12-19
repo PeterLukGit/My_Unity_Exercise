@@ -1,0 +1,61 @@
+.tooku_fix_box { background-color:#252831; border:3px solid #000; width:640px; height:512px; position:fixed; right:25%; top:100px;*cursor:move; z-index:500}
+.tooku_left { padding:15px; float:left; width:276px;}.tooku_left h2 { height:24px; overflow:hidden;color: #8892a1; font-weight: 400;}.tooku_left h2 a{font-weight: 700;color: #07aefc;}.tooku_left h2 a:hover{color: #2ac3f3;}.tooku_left h2 em {color: #fff; font-weight: 700;}
+.tk_imglist { margin-top:20px; padding-left:12px; padding-bottom:12px; background-color:#181818; width:272px; height:261px; overflow:hidden; overflow-y:auto}
+.tk_imglist li { float:left; width:75px; height:75px; margin-top:12px; margin-right:12px; position:relative;overflow: hidden; }
+.tk_imglist li .tkimg-romve { display:none; height:20px; width:20px; position:absolute; top:0px; right:0px; background:#555 url(close_hover.png) no-repeat 5px 5px; z-index:2}.tk_imglist li:hover .tkimg-romve { display:block}
+.tk_imglist li img { *height:75px; width:75px;}
+.tk_form { margin-top:18px;}.tk_form p{ margin-bottom:8px; font-size:14px; color:#999}
+.tooku_right { float:right; width:310px; padding-right:10px; height:482px; background-color:#2f323b}
+.tooku_right .input-serch { width:80px; margin:5px 5px 0 0; font-size:12px; border:1px solid #515151; padding:2px 6px; background:#181818; color:#ccc; outline:0px; height:20px; }
+.tooku_fix_box ::-webkit-scrollbar {  width:12px; height: 4px; background-color: #F5F5F5; }  
+/*定义滚动条轨道 内阴影+圆角*/  
+.tooku_fix_box ::-webkit-scrollbar-track { background: #222 ; }  
+/*定义滑块 内阴影+圆角*/  
+.tooku_fix_box ::-webkit-scrollbar-thumb { border-radius:0px;border: 2px solid #222; background-color:#07aefc; }
+.tooku_fix_box ::-webkit-scrollbar-thumb:hover { border-radius: 0px; background-color:rgba(7, 170, 247, 1);  }
+.tookfixtitle{background-color:#444;height:30px;padding: 0 10px 0 10px;color: #ffffff;line-height: 30px;cursor: move;}
+
+.NavTabs_tabs { height:265px; overflow: hidden; width: 100%; color:#333;padding: 15px 15px 0;}
+.NavTabs_tabs .navli-left  { position:relative; float:left; width:130px; height:265px; overflow:hidden; overflow-y:auto}
+.NavTabs_tabs .navli-left li { float:left; margin-bottom:-1px; width:120px; background-color:#444444; border:1px solid #2f323a; font-size:14px; color: #ccc; height:32px; line-height:32px; padding-left:10px; text-overflow:ellipsis;overflow:hidden; white-space:nowrap; cursor:pointer}
+.NavTabs_tabs .navli-left li:hover{background-color: #07AEFC;background: linear-gradient(90deg,#5ea2ff,#00e3ff);color: #fff;}
+.NavTabs_tabs .navli-left li:hover em{color: #fff;}
+.NavTabs_tabs .navli-left li em {color:#ffa500; margin-left:5px; font-size:12px; font-weight:400}
+.NavTabs_tabs .navli-left li.cur { background-color: #07aefc; color: #fff;}.NavTabs_tabs .navli-left li.cur em{color: #fff;}
+.NavTabs_tabs .sub-menu { padding:0px; background-color:#222; border:1px solid #2f323a; width:160px; height:265px; overflow:hidden; overflow-y:auto}.NavTabs_tabs .sub-menu .tabletb { margin-top:0px; margin-bottom:0px; border:1px solid #4e4e4e; color:#ccc}
+.NavTabs_tabs .sub-menu .header th { background-color:#333; border-left:1px solid #444; text-indent:9px; padding:5px 0; font-weight:700}
+.NavTabs_tabs .sub-menu .tb2 td { border-top:1px solid #444; border-left:1px solid #444; padding:5px 8px 3px 8px; line-height:20px}
+.NavTabs_tabs .sub-menu .tb2 td a{ color: #ccc}.NavTabs_tabs .sub-menu .tb2 td a:hover{ color: #56BBFF}
+.NavTabs_tabs .sub-menu .tb2 tr.evn { background-color:#222}
+.NavTabs_tabs .sub-menu .tabletb { color: #ffa500;}
+
+.btn-progress { margin-top:20px; margin-left:15px; overflow:hidden}.btn-progress p{ margin-bottom:8px; font-size:14px; color:#999}
+.btn-progress .jiangli{ background: url(jianglism.png) no-repeat 0 0;}
+.btn-progress .jiangli:hover{ background: url(jianglism_hover.png) no-repeat 0 0;}
+.progress { position:relative; background-color:#181B1E; box-shadow:0 1px 2px rgba(0, 0, 0, 0.1) inset;height:15px; margin-bottom:15px; overflow: hidden; margin-right:10px;border:3px solid #181b1e; color:#fff; line-height:14px;}
+.progress-bar { position:absolute; left:0px; top:0px; background-color: #337ab7; box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15) inset; color: #fff; float: left; font-size: 12px; height: 100%; line-height: 20px; text-align: center; transition: width 0.6s ease 0s; width: 0; z-index:1}
+.progress-bar-striped, .progress-striped .progress-bar { background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); background-size: 40px 40px;}
+.sr-only { left:0px; line-height:15px;height:15px;text-align:center;width:279px;color:#fff;position:absolute;z-index: 55;}
+.busr-only { left:0px; line-height:15px;height:15px;text-align:center;width:295px;color:#fff;position:absolute;z-index: 55;}
+.progress-bar.active, .progress.active .progress-bar { animation: 2s linear 0s normal none infinite running progress-bar-stripes;}
+.progress-bar-success { background-color: #7cc71b;}
+.progress-striped .progress-bar-success { background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);}
+.caiji-pnc { display:block; margin: 0 auto;/*float:left; margin-top:20px; margin-right:10px; margin-bottom: 5px; */width: 133px; height: 40px; line-height: 40px;text-align: center; font-size: 20px; background: #ff8f10; color: #222; cursor:pointer; border:none}
+.close-pnc{ position:absolute; top:0px; right:0px; float:left; display:block; width:30px; height:30px; line-height:30px; text-align: center; font-size: 16px; background: #444 url(close-big.png) no-repeat 3px 2px; text-indent:-9999px; color: #fff; cursor:pointer; *border:3px solid #000}
+.caiji-pnc:hover { background: #ff951b;}
+.close-pnc:hover { background-color:#888; color:#fff;}
+
+div.tagsinput { float:left; margin-left:0px;border: 1px solid #515151;background: #181818; padding:0 5px; width:200px; height:100px; overflow:hidden;}
+div.tagsinput span.tag { margin-top:6px; display: block; height: 25px;line-height: 25px;float: left; padding:0 5px; text-decoration:none; background:#3b79e7; color:#fff; margin-right:5px; margin-bottom:0px; font-size:12px;}
+div.tagsinput span.tag a { font-weight: bold; color:#fff; text-decoration:none; font-size:11px; } 
+div.tagsinput input { width:80px; margin:5px 5px 0 0; font-family: helvetica; font-size:12px; border:1px solid #515151; padding:2px 6px; background:#2d2e31; color:#ccc; outline:0px; height:20px; }
+div.tagsinput div { display:block; float: left; } 
+
+.ajaxtmodel { display:none; position:absolute; top:30px; left:0px; width:640px; height:482px; background-color:#1c1c1c;z-index:99}.ajaxtis{ display:none; background:url(5-121204193R0-50.gif) no-repeat 0 0; position:absolute; top:150px; left:260px; height:124px; width:124px; z-index:1000}
+.retursuecc { display:none; margin:15px; padding:20px 15px; background-color:#101010; width:580px; height:412px; position:absolute; font-size:16px; color:#ccc; line-height:20px; z-index:1001}.retursuecc p { margin-bottom:7px;height: 22px;overflow: hidden;}
+#rettextcon { margin:15px 0 20px; height:315px; width:550px; overflow:auto; overflow-y:auto}
+.close-bxpnc{ display:block;margin: 0 auto;/*float:left;margin-top:20px; margin-bottom:5px; */width:100%; height:40px; line-height:40px; text-align: center; font-size: 18px; background: #ff8f10; color: #333; cursor:pointer;}
+.close-bxpnc:hover { background:#ff951b;color: #333; }
+
+
+

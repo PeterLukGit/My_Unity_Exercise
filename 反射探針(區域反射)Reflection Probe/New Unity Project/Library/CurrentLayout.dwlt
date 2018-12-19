@@ -91,7 +91,7 @@ MonoBehaviour:
   m_MinSize: {x: 917, y: 442}
   m_MaxSize: {x: 22012, y: 10021}
   vertical: 0
-  controlID: 93
+  controlID: 118
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -135,7 +135,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 442}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 52
+  controlID: 78
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -334,9 +334,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
-    m_LastClickedID: 0
-    m_ExpandedIDs: 86fbffff00000000
+    m_SelectedIDs: 7c280000
+    m_LastClickedID: 10364
+    m_ExpandedIDs: ccfaffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -431,18 +431,20 @@ MonoBehaviour:
     m_ScenePaths: []
     m_ShowAllHits: 0
     m_SearchArea: 0
-    m_Folders: []
+    m_Folders:
+    - Assets
   m_ViewMode: 0
   m_StartGridSize: 64
   m_LastFolders: []
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\peter\Desktop\New Unity Project
+  m_LastProjectPath: "C:\\Users\\peter\\Documents\\GitHub\\My_Unity_Exercise\\\u53CD\u5C04\u63A2\u91DD(\u5340\u57DF\u53CD\u5C04)Reflection
+    Probe\\New Unity Project"
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 0c2d0000
     m_LastClickedID: 11532
-    m_ExpandedIDs: 82270000
+    m_ExpandedIDs: 00000000ce270000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -470,7 +472,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000082270000
+    m_ExpandedIDs: 00000000ce270000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -630,14 +632,14 @@ MonoBehaviour:
     height: 417
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 558.9390275
+  lastFramingTime: 621.3367756
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 9.704331, y: 0.6602963, z: -0.53734875}
+    m_Target: {x: 8.9261465, y: 0.6836461, z: 0.24687846}
     speed: 2
-    m_Value: {x: 9.704331, y: 0.6602963, z: -0.53734875}
+    m_Value: {x: 8.9261465, y: 0.6836461, z: 0.24687846}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -661,13 +663,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.0026364469, y: 0.9814778, z: -0.19110936, w: 0.01354628}
+    m_Target: {x: -0.057031196, y: 0.9162806, z: -0.3705595, w: -0.14101194}
     speed: 2
-    m_Value: {x: 0.0026364313, y: 0.98147196, z: -0.19110823, w: 0.013546199}
+    m_Value: {x: -0.057030585, y: 0.9162708, z: -0.37055555, w: -0.14101042}
   m_Size:
-    m_Target: 5.230615
+    m_Target: 9.662104
     speed: 2
-    m_Value: 5.230615
+    m_Value: 9.662104
   m_Ortho:
     m_Target: 0
     speed: 2

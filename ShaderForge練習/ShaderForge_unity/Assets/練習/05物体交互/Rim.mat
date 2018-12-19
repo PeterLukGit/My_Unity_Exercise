@@ -19,8 +19,8 @@ Material:
     serializedVersion: 3
     m_TexEnvs: []
     m_Floats:
-    - _InsideLightRange: 7.87
-    - _Rimrange: 4.76
+    - _InsideLightRange: 1.01
+    - _Rimrange: 2.59
     m_Colors:
     - _InsideColor: {r: 2.197, g: 0, b: 0, a: 1}
     - _RimColor: {r: 0.11724138, g: 0, b: 1, a: 1}

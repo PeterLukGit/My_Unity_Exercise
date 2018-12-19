@@ -1,0 +1,104 @@
+function isCon(arr, val){
+	for(var i=0; i<arr.length; i++){
+		if(arr[i] == val)
+		return true;
+	}
+	return false;
+}
+
+function tk_addimg(aid) {
+	if(jQuery("#tookfixbox").is(":hidden")){	jQuery("#tookfixbox").show();}
+	var srcpath = jQuery("#aimg_"+aid).attr('src');
+	var ids = jQuery("#tkinput-aid").val().split(",");
+	var result = isCon(ids, aid);  
+	if(result){
+			alert('你已经添加进采集列表');
+	}else{
+		jQuery("#tkinput-aid").val(jQuery("#tkinput-aid").val()+aid+','); // 获取当前图片附件的值
+		var newimg = '<li><img src="'+ srcpath +'" /><a href="javascript:;" onclick="removeTr('+ aid +', this)" data-id="'+ aid +'" class="tkimg-romve"></a></li>';
+		jQuery('.tk_imglist').append(newimg);
+	}
+}
+
+function Trim(str){ return str.replace(/(^\s*)|(\s*$)/g, ""); }
+var languages = ['php','ruby'];
+jQuery('#xlabel').tagsInput({
+	width: '272px',
+	height: '69px',
+	defaultText: '添加标签',
+	delimiter: '|',
+	placeholderColor: '#666666',
+	onAddTag: function(elem, elem_tags){
+		jQuery('.tag', elem_tags).each(function(){
+			var srch = Trim(jQuery(this).find("span").text().toLowerCase());
+			if(jQuery.inArray(srch, languages) != -1){
+				jQuery(this).css('background-color', 'yellow');
+			}
+		});
+	},
+	onChange: function(elem, elem_tags){
+		jQuery('.tag', elem_tags).each(function(){
+			var srch = Trim(jQuery(this).find("span").text().toLowerCase());
+			if(jQuery.inArray(srch, languages) != -1){
+				jQuery(this).css('background-color', 'yellow');
+			}
+		});
+	}
+});
+				
+function removeTr (id, obj){
+	var allid = jQuery("#tkinput-aid").val().split(",");
+	for(var i=0;i<allid.length;i++){
+			if(allid[i] == id){
+					allid.splice(i,1);//从下标为i的元素开始，连续删除1个元素
+					i--;//因为删除下标为i的元素后，该位置又被新的元素所占据，所以要重新检测该位置
+			}
+	}
+	jQuery("#tkinput-aid").val(allid);
+	jQuery(obj).parent().remove();
+}
+
+
+jQuery(document).keydown(function(event){
+if(event.keyCode == 13){  
+	srch = jQuery("#tklistsearch").val().toLowerCase();
+	jQuery('#searchjg').empty()
+	var str="", p = $('sub-menu').getElementsByTagName('tr');
+	for(var i = 0; i<p.length;i++){
+		if(p[i].innerText.toLowerCase().indexOf(srch) !== -1){
+			str += '<tr>'+p[i].innerHTML+"</tr>";
+		}
+	}
+	//console.log(str);	 
+	jQuery('#searchjg').html("<tr class=\"header\"><th>类名称</th><th width=\"40\">操作</th></tr>");
+	if(str == ''){
+		str = "<tr><td colspan=\"4\">没有找到！</td></tr>";
+	}
+	jQuery('#searchjg').append(str);
+	jQuery(".sub-menu").find("table").hide();
+	jQuery(".navli-left li").removeClass("cur");
+	jQuery(".navli-left li:first").addClass("cur");
+	jQuery("#subcate_serch").show();
+}
+});
+
+jQuery("#sub-menu").on("click",'a',function(){
+	var title = " - 【"+jQuery(this).attr("data-title")+"】";
+	var id = jQuery(this).attr("data-id"); 
+	jQuery("#tkinput-catid").val(id);
+	jQuery("#tk-catetitle").html(title);
+});
+
+jQuery("#tkclose-pnc").click(function(){
+	jQuery("#tookfixbox").hide().removeClass('no');
+});			
+jQuery(".navli-left li").click(function(){
+	var selid = jQuery(this).attr("data-id");
+	jQuery(".sub-menu").find("table").hide();
+	jQuery(".navli-left li").removeClass("cur");
+	jQuery("#subcate_"+selid).show();
+	jQuery(this).addClass("cur");
+});
+jQuery(".navli-left li:eq(1)").addClass("cur");
+var mrid = jQuery(".navli-left li:eq(1)").attr("data-id");
+jQuery("#subcate_"+mrid).show();

@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 864a453a5b9fe5a448d478b18f49d92b
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _UV_Distance: {fileID: 2800000, guid: 1a396cf98e1c27440a280ba24c64ec49, type: 3}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

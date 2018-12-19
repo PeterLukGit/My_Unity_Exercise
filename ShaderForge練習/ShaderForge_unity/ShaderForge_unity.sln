@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
+# Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShaderForge_unity", "ShaderForge_unity.csproj", "{E73EE498-13F5-CA2A-49FE-F07F38901BB2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShaderForge_unity.Editor", "ShaderForge_unity.Editor.csproj", "{4F878D6C-CA53-CA47-0540-711D220AE3B4}"

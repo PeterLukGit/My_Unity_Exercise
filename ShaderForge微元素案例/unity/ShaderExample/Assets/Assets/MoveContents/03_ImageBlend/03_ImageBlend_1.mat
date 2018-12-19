@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 03_ImageBlend_1
+  m_Shader: {fileID: 4800000, guid: 0cf8f992a32538a42a98e41bae5aa7ec, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Primary:
+        m_Texture: {fileID: 2800000, guid: 823f54d5a9890354a8437aaff76431ff, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Primary_copy:
+        m_Texture: {fileID: 2800000, guid: 823f54d5a9890354a8437aaff76431ff, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Secondary:
+        m_Texture: {fileID: 2800000, guid: cb9ee3fe7e1d7d5419dad35e12e54a92, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Secondary_copy:
+        m_Texture: {fileID: 2800000, guid: cb9ee3fe7e1d7d5419dad35e12e54a92, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Range: 0
+    - _Range_copy: 1
+    m_Colors: []

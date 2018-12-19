@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Assets/MoveContents/Unknown06/Unknown06.unity
+  isLoaded: 1
+  isActive: 1

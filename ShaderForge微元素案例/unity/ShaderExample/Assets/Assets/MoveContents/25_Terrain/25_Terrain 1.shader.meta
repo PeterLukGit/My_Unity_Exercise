@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 7daf9072c50e4414990e9fd57579a828
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _Splat0: {fileID: 2800000, guid: 12bdf285f43f65e4384e61aaf7088ce9, type: 3}
+  - _Splat1: {fileID: 2800000, guid: 515199b7c34c5c94aa692e55c1f0a571, type: 3}
+  - _Splat2: {fileID: 2800000, guid: 110b55b0b162a004eb876de762c160f4, type: 3}
+  - _Splat3: {fileID: 2800000, guid: 08a30b9887fe55c41868c7330d6f42b6, type: 3}
+  - _BumpMap0: {fileID: 2800000, guid: 2212d5458e008a94c98bbb27543282a7, type: 3}
+  - _BumpMap1: {fileID: 2800000, guid: bbe1e716c83f0d644b010b0d7412e86f, type: 3}
+  - _BumpMap2: {fileID: 2800000, guid: 29c2a9c39d4012849b4a1a2422daafcb, type: 3}
+  - _BumpMap3: {fileID: 2800000, guid: 0cf785d8f89274c43a37a77aa983450f, type: 3}
+  - _SplatAlpha: {fileID: 2800000, guid: da7c114584af629438f201864e491d5b, type: 3}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

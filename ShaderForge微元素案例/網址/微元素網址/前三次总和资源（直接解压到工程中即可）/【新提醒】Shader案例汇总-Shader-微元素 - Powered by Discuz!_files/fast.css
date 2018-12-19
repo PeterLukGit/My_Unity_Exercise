@@ -1,0 +1,12 @@
+#fastposteditor .bar ,#fastposteditor .fpd,.tedt .bar{height:36px!important; line-height:36px!important;}
+.fpd a {background: transparent url(./img/editor.png) no-repeat 0 0!important; margin:8px!important;}
+.fpd a.fbld {background-position:-28px -58px!important;}
+.fpd a.fclr{background-position:-210px -90px!important;}
+.fpd a.fmg{background-position:-60px -26px!important;}
+.fpd a.flnk{background-position:0 -28px!important;}
+.fpd a.fqt{background-position:-121px -120px!important;}
+.fpd a.fcd{background-position:-30px -28px!important;}
+.fpd a.fsml{background-position:-181px 0px!important;}
+.fpd a.fat{background-position:-150px -146px!important;}
+.fpd .pipe {display:none}
+.swfupload { margin:5px!important;}

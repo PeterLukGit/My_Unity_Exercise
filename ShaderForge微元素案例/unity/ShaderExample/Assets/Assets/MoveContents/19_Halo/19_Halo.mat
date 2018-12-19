@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 19_Halo
+  m_Shader: {fileID: 4800000, guid: 9136ee4904f5ba942b0b3ddd60305558, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Floats:
+    - _Cutoff: 0.5
+    - _DepthSlider: 1
+    - _Emission: 6.96
+    - _Fresnel: 0.1
+    - _Offset: 0.4
+    - _S: 0.29
+    m_Colors:
+    - _BrightColor: {r: 0.3803922, g: 0.09019608, b: 0.2745098, a: 1}
+    - _Color: {r: 0.13921927, g: 0.75735295, b: 0.47599563, a: 1}
+    - _DarkColor: {r: 0.9882354, g: 0.003921569, b: 0.3529412, a: 1}
+    - _FresnelColor: {r: 1, g: 0.8117648, b: 0.937255, a: 1}
+    - _RemapValue: {r: 0, g: 1, b: 0, a: 0.5}

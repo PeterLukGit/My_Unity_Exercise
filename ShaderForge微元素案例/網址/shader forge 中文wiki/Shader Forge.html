@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)http://acegikmo.com/shaderforge/nodes/?lang=zh_tw -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<script async="" src="./Shader Forge_files/analytics.js.下載"></script><script>
+
+			// JQuery
+		    document.write("\<script src='//ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js' type='text/javascript'>\<\/script>");
+	
+
+
+			// Google analytics
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-40853469-2', 'acegikmo.com');
+			ga('send', 'pageview');
+
+			var nodeList = new Array();nodeList[0] = "main";
+nodeList[1] = "add";
+nodeList[2] = "subtract";
+nodeList[3] = "multiply";
+nodeList[4] = "divide";
+nodeList[5] = "reciprocal";
+nodeList[6] = "power";
+nodeList[7] = "sqrt";
+nodeList[8] = "log";
+nodeList[9] = "min";
+nodeList[10] = "max";
+nodeList[11] = "abs";
+nodeList[12] = "sign";
+nodeList[13] = "ceil";
+nodeList[14] = "round";
+nodeList[15] = "floor";
+nodeList[16] = "trunc";
+nodeList[17] = "stepaltb";
+nodeList[18] = "smoothstep";
+nodeList[19] = "if";
+nodeList[20] = "frac";
+nodeList[21] = "fmod";
+nodeList[22] = "clamp";
+nodeList[23] = "clampsimple";
+nodeList[24] = "clamp0-1";
+nodeList[25] = "lerp";
+nodeList[26] = "lerpsimple";
+nodeList[27] = "inverselerp";
+nodeList[28] = "posterize";
+nodeList[29] = "blend";
+nodeList[30] = "remap";
+nodeList[31] = "remapsimple";
+nodeList[32] = "noise";
+nodeList[33] = "oneminus";
+nodeList[34] = "negate";
+nodeList[35] = "exp";
+nodeList[36] = "hue";
+nodeList[37] = "hsvtorgb";
+nodeList[38] = "rgbtohsv";
+nodeList[39] = "value";
+nodeList[40] = "vector2";
+nodeList[41] = "vector3";
+nodeList[42] = "vector4";
+nodeList[43] = "texture2d";
+nodeList[44] = "textureasset";
+nodeList[45] = "valueproperty";
+nodeList[46] = "vector4property";
+nodeList[47] = "color";
+nodeList[48] = "cubemap";
+nodeList[49] = "slider";
+nodeList[50] = "switch";
+nodeList[51] = "toggle";
+nodeList[52] = "dotproduct";
+nodeList[53] = "crossproduct";
+nodeList[54] = "reflect";
+nodeList[55] = "normalize";
+nodeList[56] = "append";
+nodeList[57] = "componentmask";
+nodeList[58] = "desaturate";
+nodeList[59] = "channelblend";
+nodeList[60] = "normalblend";
+nodeList[61] = "distance";
+nodeList[62] = "length";
+nodeList[63] = "transform";
+nodeList[64] = "vectorprojection";
+nodeList[65] = "vectorrejection";
+nodeList[66] = "ddx";
+nodeList[67] = "ddy";
+nodeList[68] = "ddxy";
+nodeList[69] = "panner";
+nodeList[70] = "rotator";
+nodeList[71] = "parallax";
+nodeList[72] = "uvtile";
+nodeList[73] = "uvcoordinates";
+nodeList[74] = "objectposition";
+nodeList[75] = "objectscale";
+nodeList[76] = "screenposition";
+nodeList[77] = "worldposition";
+nodeList[78] = "vertexcolor";
+nodeList[79] = "fresnel";
+nodeList[80] = "normaldirection";
+nodeList[81] = "bitangentdirection";
+nodeList[82] = "tangentdirection";
+nodeList[83] = "viewdirection";
+nodeList[84] = "viewreflection";
+nodeList[85] = "facesign";
+nodeList[86] = "lightcolor";
+nodeList[87] = "lightattenuation";
+nodeList[88] = "ambientlight";
+nodeList[89] = "lightdirection";
+nodeList[90] = "halfdirection";
+nodeList[91] = "lightposition";
+nodeList[92] = "time";
+nodeList[93] = "viewposition";
+nodeList[94] = "projectionparameters";
+nodeList[95] = "screenparameters";
+nodeList[96] = "pixelsize";
+nodeList[97] = "fogcolor";
+nodeList[98] = "scenecolor";
+nodeList[99] = "scenedepth";
+nodeList[100] = "depthblend";
+nodeList[101] = "depth";
+nodeList[102] = "pi";
+nodeList[103] = "tau";
+nodeList[104] = "phigoldenratio";
+nodeList[105] = "root2";
+nodeList[106] = "eeulersconstant";
+nodeList[107] = "sin";
+nodeList[108] = "cos";
+nodeList[109] = "tan";
+nodeList[110] = "arcsin";
+nodeList[111] = "arccos";
+nodeList[112] = "arctan";
+nodeList[113] = "arctan2";
+nodeList[114] = "matrix4x4";
+nodeList[115] = "matrix4x4property";
+nodeList[116] = "multiplymatrix";
+nodeList[117] = "transpose";
+nodeList[118] = "code";
+nodeList[119] = "relay";
+nodeList[120] = "set";
+nodeList[121] = "get";
+
+			function scrollTo(hash) {
+			    location.hash = "#" + hash;
+			}
+
+
+			function OnUpdateSearchField(){
+				var searchString = document.getElementsByName("searchfield")[0].value.toLowerCase().trim();
+				searchString = searchString.replace(/\s+/g, '');
+
+				var alwaysShow = true;
+				if(searchString.length > 0)
+					alwaysShow = false;
+
+				var matchedAny = false;
+				for(var i=0;i<nodeList.length;i++){
+					if((nodeList[i].indexOf(searchString) != -1) || alwaysShow){
+						ShowDiv(nodeList[i]);
+						matchedAny = true;
+					} else {
+						HideDiv(nodeList[i]);
+					}
+				}
+
+				if(matchedAny){
+					HideDiv("search_not_found");
+				} else {
+					ShowDiv("search_not_found");
+				}
+
+			}
+
+			function ShowDiv(id){
+				document.getElementById(id).style.display="";
+			}
+
+			function HideDiv(id){
+				document.getElementById(id).style.display="none";
+			}
+
+		</script><script src="./Shader Forge_files/jquery.min.js.下載" type="text/javascript"></script>
+		
+		
+
+		<!-- Header -->
+		<link rel="shortcut icon" type="image/png" href="http://www.acegikmo.com/shaderforge/images/web/favicon_32x32.png">
+		<title>Shader Forge</title>
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="./Shader Forge_files/styles.css">
+
+
+
+	</head>
+
+	<body onload="OnUpdateSearchField()">
+
+
+
+
+
+
+		<div class="page_wrapper">
+
+			<div class="main_header">
+				<a href="http://acegikmo.com/shaderforge/"><img src="./Shader Forge_files/sf_logo.png"></a>
+			</div>
+
+			<div style="display:inline-block;">
+				<div class="header_quote">
+					<div class="mainpage_quote_body">“You probably won't find a better shader editor in the galaxy kid!”</div><div class="mainpage_quote_author"><a href="http://thomaspasieka.wordpress.com/">Thomas Pasieka</a>, co-creator of The Other Brothers </div>				</div>
+
+				<br>
+				<div class="navbar">
+					<a class="button" href="http://neatcorporation.com/forums/viewforum.php?f=1">Forums</a>
+					<a class="button" href="http://acegikmo.com/shaderforge/tutorials/">Tutorials</a>
+					<a class="button" href="http://acegikmo.com/shaderforge/nodes/">Nodes</a>
+					<a class="button" href="http://acegikmo.com/shaderforge/wiki/">Wiki</a>
+					<a class="button" href="http://acegikmo.com/shaderforge/faq/">FAQ</a>
+					<a class="button" href="http://acegikmo.com/shaderforge/changelog/">Changelog</a>
+					<a class="button" href="http://shaderforge.userecho.com/" target="_blank">Feedback</a>
+
+				</div>
+			</div>
+			<div class="header_separator"></div>
+
+			<!-- <div class="notification_bg"><a href="https://bitly.com/sf_form" class="notification_text">Take a survey - help shape Shader Forge 2!</a></div> -->
+
+
+
+
+
+
+<div class="node_desc_header"><div class="search_label">搜索框</div><input type="text" name="searchfield" value="" onchange="OnUpdateSearchField()" onkeyup="OnUpdateSearchField()" onload="OnUpdateSearchField()" onkeydown="OnUpdateSearchField()"><br><div class="node_upper_separator"></div><div class="search_not_found" id="search_not_found" style="display:none;">None of the nodes matched your search :(</div><br><a href="http://acegikmo.com/shaderforge/nodes/">Eng</a> - <a href="http://acegikmo.com/shaderforge/nodes/?lang=zh_cn">简体字</a> - <a href="http://acegikmo.com/shaderforge/nodes/?lang=zh_tw">正體字</a><br><a href="http://www.neatcorporation.com/Projects/ShaderForge/Media/ShaderForge_QuickStart-tc.pdf">入門教程</a><br></div><div class="node_list"><div class="node_desc_wrapper" id="main"><div class="node_desc_title">Main （主要）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">這是您的所有其他節點最終將連接到的節點。它擁有為不同目的傳遞服務的多個輸入。<br>
+		以下動畫圖像顯示所有輸入及其隨時間變化的行為。大部分輸入會在 0 和 1（黑色和白色）之間來回繪制動畫。<br><br>
+		<div class="node_desc_main_input"><div class="node_desc_inner_img"><img src="./Shader Forge_files/main_input_diffuse.gif"></div><div class="node_desc_main_input_right"><div class="node_desc_main_input_title">Diffuse （漫反射）</div><div class="node_desc_main_input_desc">這是著色器的主要顏色。漫反射顏色將根據出光的法線角度接收光線或衰減光線，以及被陰影遮罩。</div></div></div><br>
+		<div class="node_desc_main_input"><div class="node_desc_inner_img"><img src="./Shader Forge_files/main_input_diffusepower.gif"></div><div class="node_desc_main_input_right"><div class="node_desc_main_input_title">Diffuse Power （漫反射力道）</div><div class="node_desc_main_input_desc">這是光法線角度衰減的指數。可在使用大於 1 的值時獲得額外的金屬外觀。請注意，無論何時啓用，它都相當消耗效能。</div></div></div><br>
+		<div class="node_desc_main_input"><div class="node_desc_inner_img"><img src="./Shader Forge_files/main_input_specular.gif"></div><div class="node_desc_main_input_right"><div class="node_desc_main_input_title">Specular （鏡面反射）</div><div class="node_desc_main_input_desc">這是著色器鏡面高光的顏色。值越高就越明亮，黑色完全不受著色器影響。</div></div></div><br>
+		<div class="node_desc_main_input"><div class="node_desc_inner_img"><img src="./Shader Forge_files/main_input_gloss.gif"></div><div class="node_desc_main_input_right"><div class="node_desc_main_input_title">Gloss （光澤）</div><div class="node_desc_main_input_desc">這是鏡面高光的指數。值越高光澤度越高，值趨近於 0 時將變得沒有光澤。請注意，如果您取消選中光澤重映射，則應避免使用低於 1 的光澤值。</div></div></div><br>
+		<div class="node_desc_main_input"><div class="node_desc_inner_img"><img src="./Shader Forge_files/main_input_normal.gif"></div><div class="node_desc_main_input_right"><div class="node_desc_main_input_title">Normal （法線）</div><div class="node_desc_main_input_desc">這是切線空間法線方向，您可在此連接法線貼圖或自定義法線向量。</div></div></div><br>
+		<div class="node_desc_main_input"><div class="node_desc_inner_img"><img src="./Shader Forge_files/main_input_emission.gif"></div><div class="node_desc_main_input_right"><div class="node_desc_main_input_title">Emission （自發光）</div><div class="node_desc_main_input_desc">這是無論光照條件如何始終都會增加到著色器的光線。</div></div></div><br>
+		<div class="node_desc_main_input"><div class="node_desc_inner_img"><img src="./Shader Forge_files/main_input_transmission.gif"></div><div class="node_desc_main_input_right"><div class="node_desc_main_input_title">Transmission （透射）</div><div class="node_desc_main_input_desc">此選項在光源位於目前著色的表面背後時控制有多少光線可以通過。這對於薄型材料十分有用，例如布料或植物。</div></div></div><br>
+		<div class="node_desc_main_input"><div class="node_desc_inner_img"><img src="./Shader Forge_files/main_input_lightwrapping.gif"></div><div class="node_desc_main_input_right"><div class="node_desc_main_input_title">Light Wrapping （環繞光）</div><div class="node_desc_main_input_desc">這是控制出光法線角度衰減偏移的一種方法，可用於獲得與次表面散射相似的效果。對於平滑對象最有用。輸入偏紅色的值將讓紅色通道比其他通道更多地「環繞」對象，這樣看起來就像是光線傳遞到網格中並攜帶紅色波長出來，與遮罩皮膚的方法類似。</div></div></div><br>
+		<div class="node_desc_main_input"><div class="node_desc_inner_img"><img src="./Shader Forge_files/main_input_diffuseambientlight.gif"></div><div class="node_desc_main_input_right"><div class="node_desc_main_input_title">Diffuse Ambient Light （漫反射環境光）</div><div class="node_desc_main_input_desc">此選項將光線增加到著色器，受漫反射影響。可以與立方體貼圖（使用基於圖像的光照 (IBL) 的法線方向）或環境光等一起使用</div></div></div><br>
+		<div class="node_desc_main_input"><div class="node_desc_inner_img"><img src="./Shader Forge_files/main_input_specularambientlight.gif"></div><div class="node_desc_main_input_right"><div class="node_desc_main_input_title">Specular Ambient Light （鏡面反射環境光）</div><div class="node_desc_main_input_desc">此選項將光線增加到著色器，受鏡面反射影響。可以與立方體貼圖（使用基於圖像的光照 (IBL) 的視圖反射方向）等一起使用</div></div></div><br>
+		<div class="node_desc_main_input"><div class="node_desc_inner_img"><img src="./Shader Forge_files/main_input_diffuseambientlight.gif"></div><div class="node_desc_main_input_right"><div class="node_desc_main_input_title">Diffuse Ambient Occlusion （漫反射環境光遮蔽）</div><div class="node_desc_main_input_desc">此選項抑制間接漫反射光線，例如光探頭、間接光線和漫反射環境光</div></div></div><br>
+		<div class="node_desc_main_input"><div class="node_desc_inner_img"><img src="./Shader Forge_files/main_input_specularambientlight.gif"></div><div class="node_desc_main_input_right"><div class="node_desc_main_input_title">Specular Ambient Occlusion （鏡面反射環境光遮蔽）</div><div class="node_desc_main_input_desc">此選項可抑制間接鏡面反射光線，例如反射探頭和鏡面反射環境光</div></div></div><br>
+		<div class="node_desc_main_input"><div class="node_desc_inner_img"><img src="./Shader Forge_files/main_input_customlighting.gif"></div><div class="node_desc_main_input_right"><div class="node_desc_main_input_title">Custom Lighting （自定義照明）</div><div class="node_desc_main_input_desc">此輸入在著色器設置為不打光時處於活動狀態，可讓您定義自定義照明行為。您在此處根據光線放置節點。</div></div></div><br>
+		<div class="node_desc_main_input"><div class="node_desc_inner_img"><img src="./Shader Forge_files/main_input_alpha.gif"></div><div class="node_desc_main_input_right"><div class="node_desc_main_input_title">Opacity （不透明度）</div><div class="node_desc_main_input_desc">Opacity（不透明度）控制最終像素的透明度。請注意，部分透明度通常很難設置正確，特別是在使用延遲著色時。</div></div></div><br>
+		<div class="node_desc_main_input"><div class="node_desc_inner_img"><img src="./Shader Forge_files/main_input_alphaclip.gif"></div><div class="node_desc_main_input_right"><div class="node_desc_main_input_title">Opacity Clip （不透明度剪切）</div><div class="node_desc_main_input_desc">Opacity Clip（不透明度剪切）是控制是否應該繪制目前像素/片段的一種方法。始終對需要透明度的對象使用硬剪切，但不要對部分透明度使用硬剪切，因為 Opacity Clip（不透明度剪切）可以輕鬆排序，但是 Opacity（不透明度）不可以。</div></div></div><br>
+		<div class="node_desc_main_input"><div class="node_desc_inner_img"><img src="./Shader Forge_files/main_input_refraction.gif"></div><div class="node_desc_main_input_right"><div class="node_desc_main_input_title">Refraction （反射）</div><div class="node_desc_main_input_desc">Refraction（反射）是用於折射背景像素的屏幕空間 UV 偏移。請確保在使用前將 Opacity（不透明度）設置為低於 1 的值，以便折射效果可見。</div></div></div><br>
+		<div class="node_desc_main_input"><div class="node_desc_inner_img"><img src="./Shader Forge_files/main_input_outlinewidth.gif"></div><div class="node_desc_main_input_right"><div class="node_desc_main_input_title">Outline Width （描邊寬度）</div><div class="node_desc_main_input_desc">此選項將向著色器增加描邊，著色為具有反面法線的偏移網格。請注意，硬邊將損壞描邊。</div></div></div><br>
+		<div class="node_desc_main_input"><div class="node_desc_inner_img"><img src="./Shader Forge_files/main_input_outlinecolor.gif"></div><div class="node_desc_main_input_right"><div class="node_desc_main_input_title">Outline Color （描邊顏色）</div><div class="node_desc_main_input_desc">此選項控制描邊的顏色。</div></div></div><br>
+		<div class="node_desc_main_input"><div class="node_desc_inner_img"><img src="./Shader Forge_files/main_input_vertexoffset.gif"></div><div class="node_desc_main_input_right"><div class="node_desc_main_input_title">Vertex Offset （頂點偏移）</div><div class="node_desc_main_input_desc">此選項可用於隨時間變化對著色器進行動畫，或在不同條件下更改對象的形狀。您只需插入每個頂點所需偏移量的 XYZ 坐標即可。</div></div></div><br>
+		<div class="node_desc_main_input"><div class="node_desc_inner_img"><img src="./Shader Forge_files/main_input_displacement.gif"></div><div class="node_desc_main_input_right"><div class="node_desc_main_input_title">DX11 Displacement （DX11 位移）</div><div class="node_desc_main_input_desc">此選項和 Vertex Offset（頂點偏移）的作用非常類似，但是與 DX11 曲面細分一起使用。（請注意，DirectX 僅適用於 Windows，需要 DX11 GPU 且必須在 Unity 設置中啓用）</div></div></div><br>
+		<div class="node_desc_main_input"><div class="node_desc_inner_img"><img src="./Shader Forge_files/main_input_tessellation.gif"></div><div class="node_desc_main_input_right"><div class="node_desc_main_input_title">DX11 Tessellation （DX11 曲面細分）</div><div class="node_desc_main_input_desc">此選項控制您要將三角形分割為多少個細分。（請注意，DirectX 僅適用於 Windows，需要 DX11 GPU 且必須在 Unity 設置中啓用）</div></div></div><br>
+		</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="add"><div class="node_desc_title">Add （加法）<div class="node_desc_title_hotkey"> A + LMB</div></div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_add.png"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">輸出 [A] + [B] 之和</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="subtract"><div class="node_desc_title">Subtract （乘法）<div class="node_desc_title_hotkey"> S + LMB</div></div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_subtract.png"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">輸出 [A] - [B] 之差</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="multiply"><div class="node_desc_title">Multiply （除法）<div class="node_desc_title_hotkey"> M + LMB</div></div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_multiply.png"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">輸出 [A] * [B] 之積</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="divide"><div class="node_desc_title">Divide （除法）<div class="node_desc_title_hotkey"> D + LMB</div></div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_divide.png"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">輸出 [A] / [B] 之商</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="power"><div class="node_desc_title">Power （乘方）<div class="node_desc_title_hotkey"> E + LMB</div></div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_power.png"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">輸出 [Val] ^ [Exp] 次方</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="sqrt"><div class="node_desc_title">Sqrt （平方根）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">輸出其輸入的平方根</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="log"><div class="node_desc_title">Log （對數）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">輸出其輸入的對數。您可以在下拉菜單中切換對數底</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="min"><div class="node_desc_title">Min （最小值）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_min.png"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">輸出 [A] 和 [B] 的最小值</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="max"><div class="node_desc_title">Max （最大值）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_max.png"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">輸出 [A] 和 [B] 的最大值</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="abs"><div class="node_desc_title">Abs （絕對值）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_abs.jpg"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">輸出其輸入的絕對值。它實質上讓負值變為正值</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="sign"><div class="node_desc_title">Sign （正負零取值）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_sign.jpg"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">輸出其輸入的符號。<br>
+		值大於 0 時輸出 1<br>
+		值等於 0 時輸出 0<br>
+		值小於 0 時輸出 -1</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="ceil"><div class="node_desc_title">Ceil （進位取整）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_ceil.jpg"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">輸出時將其輸入向上捨入為最近整數</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="round"><div class="node_desc_title">Round （四捨五入取整）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_round.jpg"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">輸出時將其輸入四捨五入為最近整數</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="floor"><div class="node_desc_title">Floor （捨位取整）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_floor.jpg"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">輸出時將其輸入向下捨入為最近整數</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="trunc"><div class="node_desc_title">Trunc （取整）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_trunc.jpg"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">輸出時將其輸入向零四捨五入到最近整數。它實質上去掉小數，留下整數</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="stepaltbaltb"><div class="node_desc_title">Step (A &lt;= B) （比較 (A &lt;= B)）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_step.png"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">如果 [A] 小於或等於 [B]，則輸出 1，否則輸出 0</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="if"><div class="node_desc_title">If （條件）<div class="node_desc_title_hotkey"> I + LMB</div></div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">[A] 大於 [B] 時，輸出 [A&gt;B] 輸入<br>
+		[A] 等於 [B] 時，輸出 [A=B] 輸入<br>
+		[A] 小於 [B] 時，輸出 [A&lt;B] 輸入</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="frac"><div class="node_desc_title">Frac （取小數）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_frac.jpg"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">輸出其輸入的小數部分。它實質上移除整數部分，僅保留小數部分。如果輸入為 4.32，則會輸出 0.32。此節點在與 Time（時間）節點一起使用時非常有用，會隨時間變化帶來鋸齒波</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="fmod"><div class="node_desc_title">Fmod （取模）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">輸出 [A] 除以 [B] 的余數</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="clamp"><div class="node_desc_title">Clamp （範圍）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">輸出其主輸入的值，不小於 [Min] 且不大於 [Max]</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="clampsimple"><div class="node_desc_title">Clamp (Simple) （範圍（簡單））</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">跟 Clamp（範圍）一樣，但為最小值和最大值使用數字輸入，而不使用節點接口</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="clamp0-10-1"><div class="node_desc_title">Clamp 0-1 （範圍 0-1）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_clamp01.jpg"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">輸出其輸入值，不小於 0 且不大於 1</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="lerp"><div class="node_desc_title">Lerp （線性插值）<div class="node_desc_title_hotkey"> L + LMB</div></div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_lerp.png"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">Lerp（線性插值）用於混合兩個值或顏色。<br>
+		如果 [T] 為 0，則將輸出 A<br>
+		如果 [T] 為 0.5，則將輸入 [A] 和 [B] 的分半混合 <br>
+		如果 [T] 為1，則將輸出 B<br>
+		如果 [T] 為兩者間的任一值，則將輸入兩者的線性混合。</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="lerpsimple"><div class="node_desc_title">Lerp (Simple) （線性插值（簡單））</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">與 Lerp（線性插值）一樣，但為 [A] 和 [B] 使用數字輸入，而不使用節點接口</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="posterize"><div class="node_desc_title">Posterize （色調分離）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_posterize.png"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">基於經過 [Steps] 的值對值進行四捨五入取整。[Steps] 值為 5 時將在 0 到 1 的範圍內創建 5 段</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="blend"><div class="node_desc_title">Blend （混合）<div class="node_desc_title_hotkey"> B + LMB</div></div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_blend.png"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">使用指定方法混合 [A] 和 [B]</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="remap"><div class="node_desc_title">Remap （重映射）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_remaprangeadvanced.png"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">將值從一個範圍重映射到另一個範圍。與 Remap (Simple)（重映射（簡單））一樣，但使用輸入而不是數值常數</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="remapsimple"><div class="node_desc_title">Remap (Simple) （重映射（簡單））<div class="node_desc_title_hotkey"> R + LMB</div></div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_remaprange.png"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">將值從一個範圍重映射到另一個範圍。例如，如果節點期望 -1 到 1 的值，但您想要它輸出 2 到 5 的值，那麼您可以在第一行鍵入-1 和 1，在第二行鍵入 2 和 5</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="noise"><div class="node_desc_title">Noise （噪波）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_noise.png"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">根據兩分量輸入（例如 UV 坐標）生成偽隨機點</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="oneminus1"><div class="node_desc_title">One Minus （1 減 ）<div class="node_desc_title_hotkey"> O + LMB</div></div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_oneminus.jpg"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">輸出 1 減去其輸入。與顏色輸入一起使用時，將反轉顏色</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="negate"><div class="node_desc_title">Negate （取反）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_negate.jpg"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">輸出其主輸入乘以 -1。實質上讓正值變負，讓負值變正</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="exp"><div class="node_desc_title">Exp （指數）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">選定 Exp（指數）時：輸出 e 到其輸入的冪<br>
+		選定 Exp 2（指數 2）時：輸出 2 到其輸入的冪</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="value"><div class="node_desc_title">Value （值）<div class="node_desc_title_hotkey"> 1 + LMB</div></div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">數字值，也可稱為「Vector 1」（向量 1）。還提供屬性版本。值可以與 Append（附加）節點一起用於創建擁有多個分量的向量。值還可以與向量/顏色相乘。例如，向量 (3,1,0) 乘以 0.5 會輸出向量 (1.5,0.5,0)</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="vector22"><div class="node_desc_title">Vector 2 （向量 2）<div class="node_desc_title_hotkey"> 2 + LMB</div></div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">具有兩個分量/值的向量。通常與 UV 坐標一起使用。將 Vector 2（向量 2） 增加到 UV 坐標會轉換 UV 坐標。將 UV 坐標與 Vector 2（向量 2）相乘會縮放 UV</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="vector33"><div class="node_desc_title">Vector 3 （向量 3）<div class="node_desc_title_hotkey"> 3 + LMB</div></div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">具有三個分量/值的向量。通常用作顏色、位置或方向</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="vector44"><div class="node_desc_title">Vector 4 （向量 4）<div class="node_desc_title_hotkey"> 4 + LMB</div></div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">具有四個分量/值的向量。通常用作具有 Alpha 通道的顏色，或用作在第四個通道中有一些額外數據的位置。檢視器中有兩個參數可供曝光。Color（顏色）和 Vector 4（向量 4）參數</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="texture2d2d"><div class="node_desc_title" style="color:#53b19c;">Texture 2D （2D 貼圖 ）<div class="node_desc_title_hotkey"> T + LMB</div></div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_tex2d.png"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">包含對貼圖的引用，並將使用特定 MIP 級別在特定 UV 坐標上對貼圖進行採樣（如果已連接）。如果 [Tex] 輸入由 Texture Asset（貼圖資源）節點連接，則它將不再是檢視器中的參數。輸出 [RGB] 以及單獨的通道</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="textureasset"><div class="node_desc_title" style="color:#53b19c;">Texture Asset （貼圖資源）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_tex2dasset.png"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">包含對貼圖的引用。用於對單個貼圖進行多次採樣 – 僅可連接到 Texture 2D（2D 貼圖）節點的 [Tex] 輸入。這也將在材質的檢視器中反映出來，因此用戶只需要分配一個貼圖</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="valueproperty"><div class="node_desc_title" style="color:#53b19c;">Value (Property) （值（屬性））</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">數字值；與 Value（值）一樣，但在材質檢視器中曝光</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="vector4property4"><div class="node_desc_title" style="color:#53b19c;">Vector 4 (Property) （向量 4（屬性））</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">具有四個分量/值的向量，與 Vector 4（向量 4）一樣，但在材質檢視器中作為 4 個單獨的 X、Y、Z 和 W 值曝光</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="color"><div class="node_desc_title" style="color:#53b19c;">Color （顏色）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">具有四個分量/值的向量，與 Vector 4（向量 4）一樣，但在材質檢視器中作為取色器曝光</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="cubemap"><div class="node_desc_title" style="color:#53b19c;">Cubemap （立方體貼圖）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">包含對立方體的引用，並將使用特定 MIP 級別在特定方向對其進行採樣（如果已連接）。輸出 [RGB] 以及單獨的通道</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="slider"><div class="node_desc_title" style="color:#53b19c;">Slider （滑動條）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">讓您能夠輕鬆地在最小值和最大值之間調整某個值。也向檢視器曝光</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="dotproduct"><div class="node_desc_title">Dot Product （點積）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">輸出 [A] 和 [B] 之間的點積。對於兩個歸一化的向量而言，它實質上輸出兩個向量指向之間的距離。如果它們指向相同方向，則輸出 1；如果它們互相垂直，則輸出 0；如果它們指向相反方向，則輸出 -1。<br>
+		下拉選擇：<br>
+		標準 – 常規點積<br>
+		正數 – 讓所有負值為 0<br>
+		負數 – 讓所有正值為 0<br>
+		絕對值 – 讓所有負值為正<br>
+		歸一化 – 在 0 到 1（而不是 -1 到 1）的範圍內輸出<br>
+		<br>
+		下圖顯示使用兩個歸一化向量時不同模式的行為。<br>
+		在 X 軸上可以得到其夾角，在 Y 軸上可以得到輸出值：<br>
+		<img src="./Shader Forge_files/sfn_dot.jpg"></div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="crossproduct"><div class="node_desc_title">Cross Product （叉積）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">輸出 [A] 和 [B] 的叉積。它實質上輸出垂直於兩個輸入向量的向量</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="reflect"><div class="node_desc_title">Reflect （反射）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">輸出入射向量 [I] 的反射向量，就像在具有法線 [N]  的表面上反射/反彈一樣</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="normalize"><div class="node_desc_title">Normalize （歸一化）<div class="node_desc_title_hotkey"> N + LMB</div></div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">輸出輸入向量的歸一化版本。實質上將向量長度設置為 1，並保持相同方向</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="append"><div class="node_desc_title">Append （附加）<div class="node_desc_title_hotkey"> Q + LMB</div></div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_append.png"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">從多個輸入值/向量輸出單個向量。例如，如果 [A] 是向量 2，[B] 是 Value (Vector 1)（值（向量 1）），則節點將輸出 Vector 3（向量 3），其中 [A] 在紅色和綠色通道中，而 [B] 在藍色通道中</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="componentmask"><div class="node_desc_title">Component Mask （分量遮罩）<div class="node_desc_title_hotkey"> C + LMB</div></div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_componentmask.png"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">分量遮罩可用於重新排序或提取向量的通道</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="desaturate"><div class="node_desc_title">Desaturate （去色）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_desaturate.png"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">輸出輸入 [Col] 的去色版本。[Des] 確定去色程度。值為 1 表示完全去色，值為 0.5 表示半去色，值為 0 表示不去色</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="channelblend"><div class="node_desc_title">Channel Blend （通道混合）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_channelblend.png"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">輸出遮罩的每個分量乘以對應顏色輸入後的和。對於三平面混合十分有用</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="normalblend"><div class="node_desc_title">Normal Blend （法線混合）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">合併兩個法線方向，其中基礎法線被細節法線擾亂</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="distance"><div class="node_desc_title">Distance （距離）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_distance.png"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">輸出兩個輸入點 [A] 和 [B] 之間的距離</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="length"><div class="node_desc_title">Length （長度）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_length.png"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">輸出其輸入向量的長度/幅度</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="transform"><div class="node_desc_title">Transform （轉換）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">將向量從一個空間轉換到另一個空間。您可以在世界/本地/切線/視圖之間切換。內置向量在世界空間中。法線輸入的方向在切線空間中。</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="vectorprojection"><div class="node_desc_title">Vector Projection （向量投影）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">輸出向量 [A] 到向量 [B] 的投影</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="vectorrejection"><div class="node_desc_title">Vector Rejection （向量拒識）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">輸出從向量 [B] 拒識的向量 [A]</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="panner"><div class="node_desc_title">Panner （平移器）<div class="node_desc_title_hotkey"> P + LMB</div></div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">輸出輸入 [UV] 坐標，按 [Dist] 距離，以 U 參數和 V 參數指定的方向/速度進行平移/偏移</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="rotator"><div class="node_desc_title">Rotator （旋轉器）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_rotator.png"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">輸出輸入 [UV] 坐標，繞軸心點 [Piv] 按 [Ang] 弧度旋轉。如果 [Ang] 未連接或連接到時間節點，[Spd] 將控制旋轉速度</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="parallax"><div class="node_desc_title">Parallax （視差）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">輸出輸入 [UV] 坐標，具有從 [Hei] 輸入派生的視差偏移，深度為 [Dep]，引用高度為 [Ref]。<br>
+		[Ref] 高度為 0 表示其視差效果為高度貼圖看似從網格中突出<br>
+		[Ref] 高度為 1 表示其視差效果為高度貼圖看似向下進入網格中<br></div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="uvcoordinatesuv"><div class="node_desc_title">UV Coordinates （UV 坐標）<div class="node_desc_title_hotkey"> U + LMB</div></div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">輸出幾何圖形該部分的指定 UV 坐標。下拉選擇可讓您選擇 UV 通道 0 或 UV 通道 1。請注意，光照貼圖網格為其光照貼圖 UV 使用 UV1</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="objectposition"><div class="node_desc_title">Object Position （對象位置）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_objectposition.png"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">輸出對象軸心點的世界位置</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="screenposition"><div class="node_desc_title">Screen Position （屏幕位置）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_screenpos.png"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">輸出網格目前部分的屏幕位置，可在屏幕空間貼圖時用作 UV 坐標。在下拉框中，「Normalized」（歸一化）會將 {0,0} 放在屏幕中心，將 {1,1} 放在右上方。「Tiled」（平鋪）也會將 {0,0} 放在中心，但將根據縱橫比在 X 軸上縮放</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="worldposition"><div class="node_desc_title">World Position （世界位置）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_fragmentposition.png"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">在世界空間中輸出網格目前部分的位置</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="vertexcolor"><div class="node_desc_title">Vertex Color （頂點顏色）<div class="node_desc_title_hotkey"> V + LMB</div></div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_vertexcolor.png"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">輸出頂點顏色。如果您在頂點顏色中烘焙了環境光遮蔽，或要使用噴塗顏色為網格染色，或要將頂點顏色用於其他對象，那麼這就是您需要的節點</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="fresnel"><div class="node_desc_title">Fresnel （菲涅爾）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_fresnel.png"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">輸出表面法線和視圖方向之間的點積。如果想要使用自定義法線，則會使用 [Nrm]。默認使用擾亂法線。[Exp] 更改輸出的指數。值越高，菲涅爾越薄。</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="normaldirection"><div class="node_desc_title">Normal Direction （法線方向）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_normalvector.png"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">在世界空間中輸出網格法線的方向。Perturbed（擾亂）復選框使其在應用 Main（主要）節點的「Normal」（法線）輸入後使用法線，例如法線貼圖。</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="bitangentdirection"><div class="node_desc_title">Bitangent Direction （雙切線方向）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_binormal.png"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">在世界空間中輸出網格雙切線的方向</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="tangentdirection"><div class="node_desc_title">Tangent Direction （切線方向）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_tangent.png"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">在世界空間中輸出網格切線的方向</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="viewdirection"><div class="node_desc_title">View Direction （視圖方向）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_viewvector.png"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">在世界空間中輸出從幾何圖形目前部分到鏡頭的方向</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="viewreflection"><div class="node_desc_title">View Reflection （視圖反射）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_viewreflectionvector.png"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">輸出視圖的方向，就像根據表面法線反彈那樣。這可用作完美反射的立方體貼圖的輸入</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="lightcolor"><div class="node_desc_title">Light Color （光色）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_lightcolor.png"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">輸入目前要著色的光線的顏色</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="lightattenuation"><div class="node_desc_title">Light Attenuation （光線衰減）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_lightattenuation.png"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">輸出光線衰減。此節點同時包含光線衰減和陰影</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="ambientlight"><div class="node_desc_title">Ambient Light （環境光）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_ambientlight.png"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">輸出要在其中著色著色器的場景的環境光</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="lightdirection"><div class="node_desc_title">Light Direction （光線方向）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_lightvector.png"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">輸出目前要著色的光線的方向</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="halfdirection"><div class="node_desc_title">Half Direction （折半方向）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_halfvector.png"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">輸出折半方向。這是指向視圖和光線向量中間的方向，通常在 blinn-phong 鏡面反射模型中使用</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="lightposition"><div class="node_desc_title">Light Position （光線位置）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_lightposition.png"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">輸出目前要著色的光線的位置。<br>[Pnt] 如果目前要著色的光線是點光線，則輸出 1，否則輸出 0</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="time"><div class="node_desc_title">Time （時間）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_time.png"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">以不同速率輸出時間。<br>
+		[t/20] 以 1/20 倍速率輸出時間<br>
+		[t] 輸出目前時間<br>
+		[t*2] 以 2 倍速率輸出時間<br>
+		[t*3] 以 3 倍速率輸出時間</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="viewposition"><div class="node_desc_title">View Position （視圖位置）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_viewposition.png"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">輸出視圖/鏡頭的目前位置（請注意，使用透視鏡頭時，視圖位置在屏幕「背後」）</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="projectionparameters"><div class="node_desc_title">Projection Parameters （投影參數）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_projectionparameters.png"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">輸出四個投影參數。<br>
+		[Sign] 為 -1，如果目前使用倒裝投影矩陣著色，否則為 1<br>
+		[Near] 是目前鏡頭的近平面距離<br>
+		[Far] 是目前鏡頭的遠平面距離<br>
+		[1/Far] 是遠平面距離的倒數</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="screenparameters"><div class="node_desc_title">Screen Parameters （屏幕參數）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_screenparameters.png"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">輸出四個屏幕參數。<br>
+		[pxW] 是以像素為單位的屏幕寬度<br>
+		[pxH] 是以像素為單位的屏幕高度<br>
+		[1+1/W] 是 1 加像素寬度的倒數<br>
+		[1+1/H] 是 1 加像素高度的倒數</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="scenecolor"><div class="node_desc_title">Scene Color （場景顏色）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">包含著色此對象前的場景著色的貼圖。默認其 UV 位於屏幕空間中，從而讓每個像素都代表對象背後的顏色。這可用於更加高級的混合/透明度效果，或作為 UV 改變時形成折射的其中一種手動方法</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="scenedepth"><div class="node_desc_title">Scene Depth （場景深度）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">鏡頭到目前像素背後的場景的深度。您需要在混合設置中關閉深度緩衝編寫，<a href="http://docs.unity3d.com/Documentation/Components/SL-CameraDepthTexture.html">並且需要使用著色深度貼圖的鏡頭</a></div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="depthblend"><div class="node_desc_title">Depth Blend （深度混合）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">它根據距離輸入輸出 0 和 1 之間的值，具體取決於此像素距背景幾何圖形多近。對於水邊緣的淡出或光軸相交幾何圖形的軟化很有用。注意：您需要在混合設置中關閉深度緩衝編寫，<a href="http://docs.unity3d.com/Documentation/Components/SL-CameraDepthTexture.html">並且需要使用著色深度貼圖的鏡頭</a></div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="depth"><div class="node_desc_title">Depth （深度）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">這是攝像頭近平面到對象的距離</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="pipi"><div class="node_desc_title">Pi （π，Pi）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_pi.png"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">輸出 π 的值，圓的周長與直徑的比值（約為 3.141593）</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="tautau"><div class="node_desc_title">Tau （τ，Tau）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_tau.png"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">輸出 τ 的值，圓的周長與半徑的比值（約為 6.283185）</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="phigoldenratiophi"><div class="node_desc_title">Phi (Golden ratio) （φ，Phi（黃金比例））</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_phi.png"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">輸出 φ 的值，黃金比例（約為 1.618034）</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="root22"><div class="node_desc_title">Root 2 （√2）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_root2.png"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">輸出 2 的算術平方根（約為 1.414214）</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="eeulersconstante"><div class="node_desc_title">e (Euler's Constant) （e，歐拉常數）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_e.png"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">輸出歐拉常數e（約為 2.718282）</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="sin"><div class="node_desc_title">Sin （正弦）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">輸出其輸入的正弦</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="cos"><div class="node_desc_title">Cos （余弦）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">輸出其輸入的余弦</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="tan"><div class="node_desc_title">Tan （正切）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">輸出其輸入的正切</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="arcsin"><div class="node_desc_title">ArcSin （反正弦）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">以弧度輸出其輸入的反正弦</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="arccos"><div class="node_desc_title">ArcCos （反余弦）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">以弧度輸出其輸入的反余弦</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="arctan"><div class="node_desc_title">ArcTan （反正切）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">以弧度輸出其輸入的反正切</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="arctan2"><div class="node_desc_title">ArcTan2 （雙變量反正切）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_arctan2.png"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">以弧度輸出其兩個輸入的反正切。ArcTan2 輸出介於 –π 和 π 之間的特定角度</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="code"><div class="node_desc_title">Code （代碼）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_code.png"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">用於在著色器內部執行自定義代碼的節點。在左側的示例中，節點與線性插值的工作方式類似，在到達 [end] 之前向 [mid] 彎曲</div></td></tr></tbody></table></div></div></div><div class="node_desc_wrapper" id="relay"><div class="node_desc_title">Relay （中繼）</div><div class="node_desc"><div class="node_desc_inner"><table><tbody><tr><td><div class="node_desc_inner_img"><img src="./Shader Forge_files/sfn_relay.png"></div></td><td style="vertical-align: top;"><div class="node_desc_inner_txt">輸出其輸入，對於組織節點連接十分有用</div></td></tr></tbody></table></div></div></div></div>		
+
+
+
+		<div class="footer">
+			Shader Forge © Freya 'Acegikmo' Holmér<br>
+			webmaster@acegikmo.com
+		</div>
+
+
+
+		</div>
+	
+</body></html>

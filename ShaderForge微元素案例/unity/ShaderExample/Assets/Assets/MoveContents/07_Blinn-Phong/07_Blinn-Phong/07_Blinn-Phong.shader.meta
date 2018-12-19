@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 6698443032eb76f448ca8e02f40298dc
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _SpecRGBGlossA: {fileID: 2800000, guid: 5b32d04bbde75db45b3dffaae9a89dd2, type: 3}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

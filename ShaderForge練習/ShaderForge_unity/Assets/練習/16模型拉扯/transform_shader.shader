@@ -47,10 +47,9 @@ Shader "Shader Forge/transform_shader" {
             VertexOutput vert (VertexInput v) {
                 VertexOutput o = (VertexOutput)0;
                 o.uv0 = v.texcoord0;
-                float3 node_6434 = mul( unity_WorldToObject, float4(mul(unity_ObjectToWorld, v.vertex).rgb,0) ).xyz; // 當前物體與原點相對座標
                 float node_147 = 0.0; // 自身座標 因為是相對位置
                 float node_4703 = saturate(((o.uv0.g*2.0+-1.0)+(2.0*_Transform)));
-                float3 node_2809 = lerp((-1*node_6434.rgb),float3(node_147,node_147,node_147),node_4703);
+                float3 node_2809 = lerp((-1*mul( unity_WorldToObject, float4(mul(unity_ObjectToWorld, v.vertex).rgb,0) ).xyz.rgb),float3(node_147,node_147,node_147),node_4703);
                 float3 node_8787 = (node_2809+lerp(mul( unity_WorldToObject, float4(_Target.rgb,0) ).xyz.rgb,float3(node_147,node_147,node_147),node_4703));
                 v.vertex.xyz += node_8787;
                 o.posWorld = mul(unity_ObjectToWorld, v.vertex);
@@ -100,10 +99,9 @@ Shader "Shader Forge/transform_shader" {
             VertexOutput vert (VertexInput v) {
                 VertexOutput o = (VertexOutput)0;
                 o.uv0 = v.texcoord0;
-                float3 node_6434 = mul( unity_WorldToObject, float4(mul(unity_ObjectToWorld, v.vertex).rgb,0) ).xyz; // 當前物體與原點相對座標
                 float node_147 = 0.0; // 自身座標 因為是相對位置
                 float node_4703 = saturate(((o.uv0.g*2.0+-1.0)+(2.0*_Transform)));
-                float3 node_2809 = lerp((-1*node_6434.rgb),float3(node_147,node_147,node_147),node_4703);
+                float3 node_2809 = lerp((-1*mul( unity_WorldToObject, float4(mul(unity_ObjectToWorld, v.vertex).rgb,0) ).xyz.rgb),float3(node_147,node_147,node_147),node_4703);
                 float3 node_8787 = (node_2809+lerp(mul( unity_WorldToObject, float4(_Target.rgb,0) ).xyz.rgb,float3(node_147,node_147,node_147),node_4703));
                 v.vertex.xyz += node_8787;
                 o.posWorld = mul(unity_ObjectToWorld, v.vertex);

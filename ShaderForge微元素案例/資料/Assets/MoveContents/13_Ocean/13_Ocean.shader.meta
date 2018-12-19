@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 2590d347e58cda245ae369dd64dbf28c
+timeCreated: 1520209343
+licenseType: Pro
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _Whitecap: {fileID: 2800000, guid: f56d25e5d611d834590701c126a63399, type: 3}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

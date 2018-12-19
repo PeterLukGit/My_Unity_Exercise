@@ -1,0 +1,67 @@
+@charset "gb2312";
+/* CSS Document */
+
+.synonymContent {
+    width: 673px;
+    height: 563px;
+    background: #212121;
+    overflow-y: auto;
+    font-family: "Î¢ÈíÑÅºÚ";
+}
+.synonymLogContent{
+	width: 500px;
+	height: 450px;
+	background: #212121;
+	overflow-y: auto;
+	font-family: "Î¢ÈíÑÅºÚ";
+}
+
+
+
+
+.tagMainContent{
+	height: auto;
+	width: 450px;
+	background: #222222;
+	border:#484848 solid 3px;
+	font-family: "Î¢ÈíÑÅºÚ";
+	overflow: hidden;
+}
+.tagLogContent{
+	height: auto;
+	width: 450px;
+	background: #222222;
+	border:#484848 solid 3px;
+	font-family: "Î¢ÈíÑÅºÚ";
+	overflow: hidden;
+}
+
+.rw_weight_main{
+	width:400px;
+	background: #222222;
+	font-family: "Î¢ÈíÑÅºÚ";
+}
+
+.rw_fenye{
+	color: #fff;
+	float: right;padding: 5px;
+}
+.rw_dataCount{
+	color: #ffa500;
+}
+.rw_pageCount{
+	color: #ffa500;
+}
+.rw_pageDisable{
+	color: #666;
+}
+.rw_pageEnable{
+	color: #2589F2;
+	text-decoration:none;
+}
+.rw_pageEnable:hover{
+	text-decoration:none;
+}
+.rw_pageEnable:visited{
+	text-decoration:none;
+}
