@@ -46,3 +46,11 @@ reflection Probe會將自己範圍內所偵測到，
 reflection Probe 會製作在範圍內的 cube map
 在範圍內的能反射物體就會套用此cube map
 用以節省效能，因為不用計算整個大場景
+
+## 5.微元素ShaderForge案例
+
+http://www.element3ds.com/forum.php?mod=viewthread&tid=152064
+
+有放離線網頁包
+
+ShaderForge裡也有註解，裡面有20多個範例
