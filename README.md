@@ -106,3 +106,17 @@ https://docs.unity3d.com/Manual/PartSysExtForceModule.html
 ## 9.Windows系統Unity3D中的快捷鍵
 
 Windows系統Unity3D中的快捷鍵
+
+## 10.特效配合3D動畫
+
+原本要上傳，但看完後只是琢磨在特效部分，並未有其他部分並且也做不出來(沒圖)
+
+原理就是，分解每個特效部分，部分特效使用3D模型當渲染支架
+
+而位移部分只是用Animator幫助
+
+留下教學影片網址(影片聲音很小，基本聽不到)
+
+https://www.bilibili.com/video/av7649769
+
+https://www.bilibili.com/video/av7647599
