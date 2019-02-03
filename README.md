@@ -92,3 +92,13 @@ https://www.jianshu.com/p/9b5eef076247
 2號攝影(後面) 渲染剩下畫面
 
 在AEG001000 pdf 裡有
+
+## 7.粒子系統力場
+
+這是粒子系統力量組件範例
+
+粒子系統裡
+External Forces 
+要打開
+
+https://docs.unity3d.com/Manual/PartSysExtForceModule.html
