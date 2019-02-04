@@ -1,4 +1,4 @@
-# My_Unity_Exercise
+﻿# My_Unity_Exercise
 ## 1.大话链式编程之Audio改造术 
 
   http://www.manew.com/thread-139396-1-1.html 
@@ -120,3 +120,19 @@ Windows系統Unity3D中的快捷鍵
 https://www.bilibili.com/video/av7649769
 
 https://www.bilibili.com/video/av7647599
+
+## 11.後處理 PostProcessing
+
+PostProcessing V2
+
+1.在 Camera 裡放入 Post-process Layer(參考圖片攝影.png)，然後要設定Layer層
+
+2.在物件下放入Trigger觸發器，然後再放入Post-process Volumes調整
+
+有分 全局渲染與非全局渲染
+
+全局就是整個場景都使用，除非攝影機進入到"非全局"的範圍，便會修改成"非全局"的數據
+
+非全局，就是利用 Trigger "形狀" 放大後的範圍，一旦攝影機進入便會修改數據
+
+
