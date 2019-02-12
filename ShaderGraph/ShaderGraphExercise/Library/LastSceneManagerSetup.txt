@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Art/Effects/ShaderGraph/ShaderGraph.unity
+  isLoaded: 1
+  isActive: 1

@@ -135,4 +135,10 @@ PostProcessing V2
 
 非全局，就是利用 Trigger "形狀" 放大後的範圍，一旦攝影機進入便會修改數據
 
+## 12.ShaderGraph
 
+Unity自帶圖形化Shader編輯，PackManger要設定好
+
+HD通道 電腦很爛 所以Time跑不出來
+
+https://space.bilibili.com/20508311/video
