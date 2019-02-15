@@ -1,11 +1,11 @@
 ﻿# My_Unity_Exercise
-## 1.大话链式编程之Audio改造术 
+## 1.大话链式编程之Audio改造术 (My_Unity_Exercise/大话链式编程之Audio改造术/)
 
   http://www.manew.com/thread-139396-1-1.html 
   
   http://www.manew.com/thread-139408-1-1.html
 
-## 2.ShaderForge 練習
+## 2.ShaderForge 練習 (My_Unity_Exercise/ShaderForge/ShaderForge練習/ShaderForge_unity/)
 
 教學網址
 
@@ -25,7 +25,7 @@ unity 官方
 
 PostProcessing
 
-## 3.液態物理(Liquid Physics2D)
+## 3.液態物理(Liquid Physics2D) (My_Unity_Exercise/液態物理(Liquid Physics2D)/New Unity Project/)
 
 插件 : Liquid Physics2D
 
@@ -41,7 +41,7 @@ PostProcessing
 
 https://blog.csdn.net/RICKShaozhiheng/article/details/78314520
 
-## 4.反射探針(reflection Probe)
+## 4.反射探針(reflection Probe) (My_Unity_Exercise/反射探針(區域反射)Reflection Probe/New Unity Project/)
 
 reflection Probe會將自己範圍內所偵測到，
 能夠被反射的物件，將它更新到場景的skybox中。
@@ -54,7 +54,7 @@ reflection Probe 會製作在範圍內的 cube map
 
 用以節省效能，因為不用計算整個大場景
 
-## 5.微元素ShaderForge案例
+## 5.微元素ShaderForge案例 (My_Unity_Exercise/ShaderForge/ShaderForge微元素案例/)
 
 http://www.element3ds.com/forum.php?mod=viewthread&tid=152064
 
@@ -62,7 +62,7 @@ http://www.element3ds.com/forum.php?mod=viewthread&tid=152064
 
 ShaderForge裡也有註解，裡面有20多個範例
 
-## 6.Light Probe 光偵測子
+## 6.Light Probe 光偵測子 (My_Unity_Exercise/Light Probe 光偵測子/)
 
 這東西就是
 
@@ -83,7 +83,7 @@ https://www.youtube.com/watch?v=pzbebc0Ryv8
 https://www.jianshu.com/p/9b5eef076247
 
 
-## 7.攝影機子母畫面
+## 7.攝影機子母畫面 (My_Unity_Exercise/攝影機子母畫面/)
 
 就是攝影機渲染疊加
 
@@ -93,13 +93,11 @@ https://www.jianshu.com/p/9b5eef076247
 
 在AEG001000 pdf 裡有
 
-## 8.粒子系統力場
+## 8.粒子系統力場 (My_Unity_Exercise/粒子系統力場/Particle System Force Field/)
 
 這是粒子系統力量組件範例
 
-粒子系統裡
-External Forces 
-要打開
+粒子系統裡External Forces 要打開
 
 https://docs.unity3d.com/Manual/PartSysExtForceModule.html
 
@@ -121,7 +119,7 @@ https://www.bilibili.com/video/av7649769
 
 https://www.bilibili.com/video/av7647599
 
-## 11.後處理 PostProcessing
+## 11.後處理 PostProcessing (My_Unity_Exercise/後處理 PostProcessing/PostProcessing/)
 
 PostProcessing V2
 
@@ -135,10 +133,38 @@ PostProcessing V2
 
 非全局，就是利用 Trigger "形狀" 放大後的範圍，一旦攝影機進入便會修改數據
 
-## 12.ShaderGraph
+## 12.ShaderGraph (My_Unity_Exercise/ShaderGraph/)
 
 Unity自帶圖形化Shader編輯，PackManger要設定好
 
 HD通道 電腦很爛 所以Time跑不出來
 
 https://space.bilibili.com/20508311/video
+
+## 13.Cinemachine
+
+Siki學院教的
+
+除一部分外，不太好
+
+Siki學院包裏是，教學的範例檔案
+
+至於另一個隨便做，無法當成案例
+
+還有Youtube有一網址交的不錯
+
+http://www.sikiedu.com/my/course/234
+
+https://www.youtube.com/watch?fbclid=IwAR2XVbgY8-ZZpfeVIwe8EvkV7nUmtJ4ZKMzKFcuYGKd7ObVgw-lWLQrat4Q&feature=youtu.be&v=-FvMGY12LCU&app=desktop
+
+部分資源太大，丟到Google雲端(原檔)，再壓縮檔放Github
+
+## 14.2017Particle System
+
+unity 2017官方粒子系統
+
+本Github只是存檔案例而已
+
+一切著作權歸 Unity官方所有
+
+
