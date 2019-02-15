@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/CinemachineExamples/Scenes/2DConfinedTargetGroup.unity
+  isLoaded: 1
+  isActive: 1
