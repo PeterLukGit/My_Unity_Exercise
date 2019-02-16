@@ -1,0 +1,246 @@
+fileFormatVersion: 2
+guid: c5eb6b6470d490a4b8429d8a350d2f2f
+timeCreated: 18446744011573954816
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: HeadEnd
+    100002: Head
+    100004: Neck
+    100006: Spine4
+    100008: Spine3
+    100010: Spine2
+    100012: Spine1
+    100014: Root
+    100016: TailSplayR3
+    100018: Eagle
+    100020: TailSplayREnd
+    100022: //RootNode
+    100024: TailSplayR2
+    100026: TailSplayLEnd
+    100028: TailSplayL3
+    100030: TailSplayL2
+    100032: TailEnd
+    100034: Tail3
+    100036: Tail2
+    100038: Tail1
+    100040: RightThumbEnd
+    100042: RightThumb3
+    100044: RightThumb2
+    100046: RightThumb1
+    100048: RightToeBase
+    100050: Rightfoot
+    100052: RightLeg
+    100054: RightUpLeg
+    100056: LeftThumbEnd
+    100058: LeftThumb3
+    100060: LeftThumb2
+    100062: LeftThumb1
+    100064: LeftRingFinger3
+    100066: LeftRingFinger2
+    100068: LeftRingFinger1
+    100070: LeftToeBase
+    100072: LeftFoot
+    100074: LeftLeg
+    100076: LeftUpLeg
+    100078: RightWingEnd
+    100080: RightWing4
+    100082: RightWing3
+    100084: RightWing2
+    100086: RightWing1
+    100088: LeftWingEnd
+    100090: LeftWing4
+    100092: LeftWing3
+    100094: LeftWing2
+    100096: LeftWing1
+    100098: HeadEnd 1
+    100100: LeftFeatherOuterEnd
+    100102: LeftFeatherInner
+    100104: LeftFeatherOuter
+    100106: RightIndexFingerEnd
+    100108: RightFeatherInnerEnd
+    100110: RightMiddleFingerEnd
+    100112: RightFeatherInner
+    100114: RightFeatherOuterEnd
+    100116: LeftFeatherInnerEnd
+    100118: RightFeatherOuter
+    100120: LeftMiddleFinger3
+    100122: LeftMiddleFinger1
+    100124: LeftMiddleFinger2
+    100126: RightRingFinger1
+    100128: RightRingFinger2
+    100130: RightRingFinger3
+    100132: LeftIndexFinger3
+    100134: LeftIndexFingerEnd
+    100136: RightMiddleFinger1
+    100138: RightMiddleFinger2
+    100140: RightMiddleFinger3
+    100142: LeftIndexFinger1
+    100144: LeftIndexFinger2
+    100146: LeftMiddleFingerEnd
+    100148: LeftRingFingerEnd
+    100150: RightIndexFinger2
+    100152: RightIndexFinger3
+    100154: RightRingFingerEnd
+    100156: RightIndexFinger1
+    400000: HeadEnd
+    400002: Head
+    400004: Neck
+    400006: Spine4
+    400008: Spine3
+    400010: Spine2
+    400012: Spine1
+    400014: Root
+    400016: TailSplayR3
+    400018: Eagle
+    400020: TailSplayREnd
+    400022: //RootNode
+    400024: TailSplayR2
+    400026: TailSplayLEnd
+    400028: TailSplayL3
+    400030: TailSplayL2
+    400032: TailEnd
+    400034: Tail3
+    400036: Tail2
+    400038: Tail1
+    400040: RightThumbEnd
+    400042: RightThumb3
+    400044: RightThumb2
+    400046: RightThumb1
+    400048: RightToeBase
+    400050: Rightfoot
+    400052: RightLeg
+    400054: RightUpLeg
+    400056: LeftThumbEnd
+    400058: LeftThumb3
+    400060: LeftThumb2
+    400062: LeftThumb1
+    400064: LeftRingFinger3
+    400066: LeftRingFinger2
+    400068: LeftRingFinger1
+    400070: LeftToeBase
+    400072: LeftFoot
+    400074: LeftLeg
+    400076: LeftUpLeg
+    400078: RightWingEnd
+    400080: RightWing4
+    400082: RightWing3
+    400084: RightWing2
+    400086: RightWing1
+    400088: LeftWingEnd
+    400090: LeftWing4
+    400092: LeftWing3
+    400094: LeftWing2
+    400096: LeftWing1
+    400098: HeadEnd 1
+    400100: LeftFeatherOuterEnd
+    400102: LeftFeatherInner
+    400104: LeftFeatherOuter
+    400106: RightIndexFingerEnd
+    400108: RightFeatherInnerEnd
+    400110: RightMiddleFingerEnd
+    400112: RightFeatherInner
+    400114: RightFeatherOuterEnd
+    400116: LeftFeatherInnerEnd
+    400118: RightFeatherOuter
+    400120: LeftMiddleFinger3
+    400122: LeftMiddleFinger1
+    400124: LeftMiddleFinger2
+    400126: RightRingFinger1
+    400128: RightRingFinger2
+    400130: RightRingFinger3
+    400132: LeftIndexFinger3
+    400134: LeftIndexFingerEnd
+    400136: RightMiddleFinger1
+    400138: RightMiddleFinger2
+    400140: RightMiddleFinger3
+    400142: LeftIndexFinger1
+    400144: LeftIndexFinger2
+    400146: LeftMiddleFingerEnd
+    400148: LeftRingFingerEnd
+    400150: RightIndexFinger2
+    400152: RightIndexFinger3
+    400154: RightRingFingerEnd
+    400156: RightIndexFinger1
+    4300000: Eagle
+    11100000: //RootNode
+    13700000: Root
+    13700002: Eagle
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 3
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,242 @@
+fileFormatVersion: 2
+guid: 2e0b54f565356b74c8d9378b25484097
+timeCreated: 18446744011573954816
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: RightRingFinger1
+    100002: LeftIndexFinger2
+    100004: RightIndexFingerEnd
+    100006: LeftFeatherOuterEnd
+    100008: LeftMiddleFinger1
+    100010: LeftIndexFinger1
+    100012: RightIndexFinger3
+    100014: LeftMiddleFingerEnd
+    100016: RightMiddleFinger2
+    100018: LeftRingFingerEnd
+    100020: RightMiddleFinger3
+    100022: RightIndexFinger1
+    100024: RightRingFingerEnd
+    100026: LeftIndexFingerEnd
+    100028: RightRingFinger3
+    100030: LeftMiddleFinger3
+    100032: RightFeatherInnerEnd
+    100034: RightFeatherOuter
+    100036: RightFeatherOuterEnd
+    100038: RightIndexFinger2
+    100040: LeftMiddleFinger2
+    100042: RightFeatherInner
+    100044: LeftFeatherInner
+    100046: LeftFeatherOuter
+    100048: RightRingFinger2
+    100050: RightMiddleFinger1
+    100052: LeftFeatherInnerEnd
+    100054: RightMiddleFingerEnd
+    100056: LeftIndexFinger3
+    100058: Neck
+    100060: Spine4
+    100062: Spine3
+    100064: Spine2
+    100066: Spine1
+    100068: Root
+    100070: TailSplayL2
+    100072: TailSplayLEnd
+    100074: TailSplayL3
+    100076: //RootNode
+    100078: TailSplayR2
+    100080: TailSplayREnd
+    100082: TailSplayR3
+    100084: TailEnd
+    100086: Tail3
+    100088: Tail2
+    100090: Tail1
+    100092: RightThumbEnd
+    100094: RightThumb3
+    100096: RightThumb2
+    100098: RightThumb1
+    100100: RightToeBase
+    100102: Rightfoot
+    100104: RightLeg
+    100106: RightUpLeg
+    100108: LeftThumbEnd
+    100110: LeftThumb3
+    100112: LeftThumb2
+    100114: LeftThumb1
+    100116: LeftRingFinger3
+    100118: LeftRingFinger2
+    100120: LeftRingFinger1
+    100122: LeftToeBase
+    100124: LeftFoot
+    100126: LeftLeg
+    100128: LeftUpLeg
+    100130: RightWingEnd
+    100132: RightWing4
+    100134: RightWing3
+    100136: RightWing2
+    100138: RightWing1
+    100140: LeftWingEnd
+    100142: LeftWing4
+    100144: LeftWing3
+    100146: LeftWing2
+    100148: LeftWing1
+    100150: HeadEnd 1
+    100152: HeadEnd
+    100154: Head
+    400000: RightRingFinger1
+    400002: LeftIndexFinger2
+    400004: RightIndexFingerEnd
+    400006: LeftFeatherOuterEnd
+    400008: LeftMiddleFinger1
+    400010: LeftIndexFinger1
+    400012: RightIndexFinger3
+    400014: LeftMiddleFingerEnd
+    400016: RightMiddleFinger2
+    400018: LeftRingFingerEnd
+    400020: RightMiddleFinger3
+    400022: RightIndexFinger1
+    400024: RightRingFingerEnd
+    400026: LeftIndexFingerEnd
+    400028: RightRingFinger3
+    400030: LeftMiddleFinger3
+    400032: RightFeatherInnerEnd
+    400034: RightFeatherOuter
+    400036: RightFeatherOuterEnd
+    400038: RightIndexFinger2
+    400040: LeftMiddleFinger2
+    400042: RightFeatherInner
+    400044: LeftFeatherInner
+    400046: LeftFeatherOuter
+    400048: RightRingFinger2
+    400050: RightMiddleFinger1
+    400052: LeftFeatherInnerEnd
+    400054: RightMiddleFingerEnd
+    400056: LeftIndexFinger3
+    400058: Neck
+    400060: Spine4
+    400062: Spine3
+    400064: Spine2
+    400066: Spine1
+    400068: Root
+    400070: TailSplayL2
+    400072: TailSplayLEnd
+    400074: TailSplayL3
+    400076: //RootNode
+    400078: TailSplayR2
+    400080: TailSplayREnd
+    400082: TailSplayR3
+    400084: TailEnd
+    400086: Tail3
+    400088: Tail2
+    400090: Tail1
+    400092: RightThumbEnd
+    400094: RightThumb3
+    400096: RightThumb2
+    400098: RightThumb1
+    400100: RightToeBase
+    400102: Rightfoot
+    400104: RightLeg
+    400106: RightUpLeg
+    400108: LeftThumbEnd
+    400110: LeftThumb3
+    400112: LeftThumb2
+    400114: LeftThumb1
+    400116: LeftRingFinger3
+    400118: LeftRingFinger2
+    400120: LeftRingFinger1
+    400122: LeftToeBase
+    400124: LeftFoot
+    400126: LeftLeg
+    400128: LeftUpLeg
+    400130: RightWingEnd
+    400132: RightWing4
+    400134: RightWing3
+    400136: RightWing2
+    400138: RightWing1
+    400140: LeftWingEnd
+    400142: LeftWing4
+    400144: LeftWing3
+    400146: LeftWing2
+    400148: LeftWing1
+    400150: HeadEnd 1
+    400152: HeadEnd
+    400154: Head
+    7400000: Take 001
+    11100000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 3
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

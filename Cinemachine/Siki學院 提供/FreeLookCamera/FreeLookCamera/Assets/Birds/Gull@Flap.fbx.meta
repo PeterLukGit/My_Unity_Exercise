@@ -1,0 +1,202 @@
+fileFormatVersion: 2
+guid: 5a04ac9d92c861b43b046082d3deeeae
+timeCreated: 18446744011573954816
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: LeftIndexEnd
+    100002: LeftIndex1
+    100004: LeftToeBase
+    100006: LeftFoot
+    100008: LeftLeg
+    100010: LeftUpLeg
+    100012: TailEnd
+    100014: Tail1
+    100016: Tail
+    100018: RightWingEnd
+    100020: RightWing5
+    100022: RightWing4
+    100024: RightWing3
+    100026: RightWing2
+    100028: RightWing1
+    100030: LeftWingEnd
+    100032: LeftWing5
+    100034: LeftWing4
+    100036: LeftWing3
+    100038: LeftWing2
+    100040: LeftWing1
+    100042: JawEnd
+    100044: Jaw
+    100046: HeadEnd
+    100048: Head
+    100050: Neck
+    100052: Spine1
+    100054: Spine
+    100056: Hips
+    100058: RightFeatherInnerEnd
+    100060: LeftFeatherOuterEnd
+    100062: RightFeatherOuterEnd
+    100064: RightFeatherInner
+    100066: RightFeatherOuter
+    100068: LeftFeatherInnerEnd
+    100070: LeftFeatherOuter
+    100072: LeftFeatherInner
+    100074: LeftRing1
+    100076: LeftMiddleEnd
+    100078: LeftMiddle1
+    100080: //RootNode
+    100082: TailSplayREnd
+    100084: RightMiddle1
+    100086: RightIndexEnd
+    100088: RightIndex1
+    100090: RightToeBase
+    100092: TailSplayL2
+    100094: RightRingEnd
+    100096: RightRing1
+    100098: RightMiddleEnd
+    100100: RightFoot
+    100102: RightLeg
+    100104: RightUpLeg
+    100106: LeftRingEnd
+    100108: TailSplayR3
+    100110: TailSplayR2
+    100112: TailSplayLEnd
+    100114: TailSplayL3
+    400000: LeftIndexEnd
+    400002: LeftIndex1
+    400004: LeftToeBase
+    400006: LeftFoot
+    400008: LeftLeg
+    400010: LeftUpLeg
+    400012: TailEnd
+    400014: Tail1
+    400016: Tail
+    400018: RightWingEnd
+    400020: RightWing5
+    400022: RightWing4
+    400024: RightWing3
+    400026: RightWing2
+    400028: RightWing1
+    400030: LeftWingEnd
+    400032: LeftWing5
+    400034: LeftWing4
+    400036: LeftWing3
+    400038: LeftWing2
+    400040: LeftWing1
+    400042: JawEnd
+    400044: Jaw
+    400046: HeadEnd
+    400048: Head
+    400050: Neck
+    400052: Spine1
+    400054: Spine
+    400056: Hips
+    400058: RightFeatherInnerEnd
+    400060: LeftFeatherOuterEnd
+    400062: RightFeatherOuterEnd
+    400064: RightFeatherInner
+    400066: RightFeatherOuter
+    400068: LeftFeatherInnerEnd
+    400070: LeftFeatherOuter
+    400072: LeftFeatherInner
+    400074: LeftRing1
+    400076: LeftMiddleEnd
+    400078: LeftMiddle1
+    400080: //RootNode
+    400082: TailSplayREnd
+    400084: RightMiddle1
+    400086: RightIndexEnd
+    400088: RightIndex1
+    400090: RightToeBase
+    400092: TailSplayL2
+    400094: RightRingEnd
+    400096: RightRing1
+    400098: RightMiddleEnd
+    400100: RightFoot
+    400102: RightLeg
+    400104: RightUpLeg
+    400106: LeftRingEnd
+    400108: TailSplayR3
+    400110: TailSplayR2
+    400112: TailSplayLEnd
+    400114: TailSplayL3
+    7400000: Take 001
+    11100000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 3
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
