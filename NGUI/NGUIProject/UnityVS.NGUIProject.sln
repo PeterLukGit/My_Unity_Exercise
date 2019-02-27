@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityVS.NGUIProject.CSharp", "UnityVS.NGUIProject.CSharp.csproj", "{8530F075-EAE4-6124-D1E1-3FFDE9C5053B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityVS.NGUIProject.CSharp.Editor", "UnityVS.NGUIProject.CSharp.Editor.csproj", "{63620837-3095-D0C4-2377-D2983A2CA85C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8530F075-EAE4-6124-D1E1-3FFDE9C5053B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8530F075-EAE4-6124-D1E1-3FFDE9C5053B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8530F075-EAE4-6124-D1E1-3FFDE9C5053B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8530F075-EAE4-6124-D1E1-3FFDE9C5053B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63620837-3095-D0C4-2377-D2983A2CA85C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63620837-3095-D0C4-2377-D2983A2CA85C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63620837-3095-D0C4-2377-D2983A2CA85C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63620837-3095-D0C4-2377-D2983A2CA85C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

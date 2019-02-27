@@ -1,4 +1,7 @@
 ﻿# My_Unity_Exercise
+
+### 這裡是存放個人Unity練習檔，部分圖檔或是資料，著作權歸原作者所有如有侵權請告之
+
 ## 1.大话链式编程之Audio改造术 (My_Unity_Exercise/大话链式编程之Audio改造术/)
 
   http://www.manew.com/thread-139396-1-1.html 
@@ -159,6 +162,8 @@ https://www.youtube.com/watch?fbclid=IwAR2XVbgY8-ZZpfeVIwe8EvkV7nUmtJ4ZKMzKFcuYG
 
 部分資源太大，丟到Google雲端(原檔)，再壓縮檔放Github
 
+一切著作權歸 Siki學院官方所有
+
 ## 14.2017Particle System (My_Unity_Exercise/2017Particle System/)
 
 unity 2017官方粒子系統
@@ -167,4 +172,11 @@ unity 2017官方粒子系統
 
 一切著作權歸 Unity官方所有
 
+## 15.NGUI (My_Unity_Exercise\NGUI)
+
+Unity NGUI 老師範例檔
+
+一切著作權歸 taikr官方、Siki老師所有
+
+http://www.taikr.com/my/course/34
 

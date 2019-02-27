@@ -95,7 +95,7 @@ MonoBehaviour:
   m_MinSize: {x: 917, y: 448}
   m_MaxSize: {x: 22012, y: 10024}
   vertical: 0
-  controlID: 128
+  controlID: 10
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 448}
   m_MaxSize: {x: 4002, y: 8048}
   vertical: 1
-  controlID: 28
+  controlID: 49
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -301,23 +301,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: d4fbffff5e1b0000
+      m_SelectedIDs: f2600000
+      m_LastClickedID: 24818
+      m_ExpandedIDs: 30e3ffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: "\u5E8F\u5217\u5716"
+        m_OriginalName: "\u5E8F\u5217\u5716"
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: 24752
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 7}
       m_SearchString: 
@@ -400,19 +400,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - "Assets/00\u4E0D\u932FShader"
   m_ViewMode: 0
   m_StartGridSize: 64
   m_LastFolders: []
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\Peter\Desktop\ShaderGraphExercise
+  m_LastProjectPath: D:\DownLoadFolder\Github\My_Unity_Exercise\ShaderGraph\ShaderGraphExercise
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: e6280000
     m_LastClickedID: 10470
-    m_ExpandedIDs: 00000000b811000072130000081500005415000084150000e415000012180000b2190000
+    m_ExpandedIDs: 00000000ea500000805c00008a5d0000a45d0000de5d0000fc5f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -440,21 +440,21 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff00000000b8110000721300005415000084150000e4150000b2190000
+    m_ExpandedIDs: ffffffff00000000ea500000805c0000565d00008a5d0000a45d0000de5d0000fc5f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: "\u6CE8\u610F"
-      m_OriginalName: "\u6CE8\u610F"
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 4836
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 8}
     m_SearchString: 
@@ -606,9 +606,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -7.0742, y: 3.2033854, z: -0.39285702}
+    m_Target: {x: 0.46, y: 2.3528743, z: -5.25}
     speed: 2
-    m_Value: {x: -7.0742, y: 3.2033854, z: -0.39285702}
+    m_Value: {x: 0.46, y: 2.3528743, z: -5.25}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -636,13 +636,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.19052668, y: -0.7454844, z: 0.2399597, w: -0.59192234}
+    m_Target: {x: -0.31893474, y: -0.46571258, z: 0.18461682, w: -0.8045581}
     speed: 2
-    m_Value: {x: -0.19052668, y: -0.7454844, z: 0.2399597, w: -0.59192234}
+    m_Value: {x: -0.31893402, y: -0.46571153, z: 0.1846164, w: -0.80455625}
   m_Size:
-    m_Target: 6.092148
+    m_Target: 1.3553479
     speed: 2
-    m_Value: 6.092148
+    m_Value: 1.3553479
   m_Ortho:
     m_Target: 0
     speed: 2
