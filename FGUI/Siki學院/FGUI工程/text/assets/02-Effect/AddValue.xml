@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="800,600">
+  <displayList>
+    <image id="n2_8ydn" name="n2" src="8ydn15" xy="34,489" group="n6_8ydn"/>
+    <image id="n1_8ydn" name="n1" src="8ydn14" xy="31,490" group="n6_8ydn"/>
+    <text id="n3_8ydn" name="n3" xy="205,497" size="243,50" group="n6_8ydn" font="ui://0wtb6lfn8ydn23" fontSize="12" letterSpacing="-14" autoSize="none" text="10000"/>
+    <movieclip id="n4_8ydn" name="n4" src="8ydn24" xy="395,439" size="0,0" group="n6_8ydn"/>
+    <text id="n5_8ydn" name="n5" xy="128,448" size="140,40" group="n6_8ydn" font="ui://0wtb6lfn8ydn22" fontSize="12" letterSpacing="-2" autoSize="none" text="+2000"/>
+    <group id="n6_8ydn" name="n6" xy="31,439" size="465,128" advanced="true"/>
+  </displayList>
+  <transition name="t0">
+    <item time="0" type="Alpha" target="n4_8ydn" value="0"/>
+    <item time="0" type="XY" target="n6_8ydn" tween="true" startValue="-467,449" endValue="31,439" duration="6" label2="AddValue"/>
+    <item time="6" type="Alpha" target="n4_8ydn" value="1"/>
+    <item time="6" type="Size" target="n4_8ydn" tween="true" startValue="0,0" endValue="64,129" duration="13"/>
+    <item time="6" type="XY" target="n6_8ydn" label="AddValue" tween="true" startValue="31,439" endValue="230,436" duration="12"/>
+    <item time="18" type="Alpha" target="n6_8ydn" tween="true" startValue="1" endValue="0" duration="6"/>
+    <item time="18" type="XY" target="n6_8ydn" tween="true" startValue="230,436" endValue="108,304" duration="6"/>
+  </transition>
+</component>

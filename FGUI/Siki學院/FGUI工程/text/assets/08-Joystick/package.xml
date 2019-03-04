@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="4yh2g7ut" jpegQuality="80" compressPNG="true">
+  <resources>
+    <component id="ja0i0" name="Main.xml" path="/" exported="true"/>
+    <image id="ja0i1" name="0.png" path="/"/>
+    <image id="ja0i2" name="1.png" path="/"/>
+    <component id="ja0i3" name="Circle.xml" path="/"/>
+  </resources>
+  <publish name="09-Joystick"/>
+</packageDescription>

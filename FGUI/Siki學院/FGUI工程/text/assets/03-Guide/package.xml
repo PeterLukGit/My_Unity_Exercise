@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="e9qmchjr" jpegQuality="80" compressPNG="true">
+  <resources>
+    <component id="hx3e0" name="Guide.xml" path="/" exported="true"/>
+    <image id="hx3e1" name="btnimage.png" path="/"/>
+    <movieclip id="hx3e2" name="quan.jta" path="/"/>
+    <movieclip id="hx3e3" name="rswcfhd.jta" path="/"/>
+    <component id="hx3e4" name="Button1.xml" path="/"/>
+  </resources>
+  <publish name=""/>
+</packageDescription>

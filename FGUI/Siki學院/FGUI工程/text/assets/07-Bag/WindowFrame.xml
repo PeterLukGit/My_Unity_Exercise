@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="615,387">
+  <displayList>
+    <image id="n0_g3vc" name="BG" src="g3vc9" xy="0,0"/>
+    <component id="n1_g3vc" name="closeButton" src="g3vcn" xy="510,-1"/>
+    <graph id="n2_g3vc" name="dragArea" xy="37,9" size="472,33"/>
+  </displayList>
+</component>

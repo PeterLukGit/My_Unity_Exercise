@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="e8q3d1sj" jpegQuality="80" compressPNG="true">
+  <resources>
+    <component id="o0vw0" name="Main.xml" path="/" exported="true"/>
+    <image id="o0vw1" name="0.png" path="/" exported="true"/>
+    <image id="o0vw2" name="5.png" path="/" exported="true"/>
+    <image id="o0vw3" name="9.png" path="/" exported="true"/>
+    <image id="o0vw4" name="10.png" path="/" exported="true"/>
+    <image id="o0vw5" name="11.png" path="/" exported="true"/>
+    <image id="o0vw6" name="12.png" path="/" exported="true"/>
+    <image id="o0vw7" name="13.png" path="/" exported="true"/>
+    <swf id="o0vw8" name="qtm01d.swf" path="/" exported="true"/>
+    <image id="o0vw9" name="r3.png" path="/" exported="true"/>
+    <component id="o0vwb" name="ButtonOpen.xml" path="/" exported="true"/>
+    <component id="o0vwc" name="PlayerWindow.xml" path="/" exported="true"/>
+    <component id="o0vwd" name="Windowframe.xml" path="/" exported="true"/>
+    <component id="o0vwe" name="ButtonClose.xml" path="/" exported="true"/>
+    <component id="o0vwg" name="ButtonLeft.xml" path="/" exported="true"/>
+    <component id="o0vwh" name="ButtonRight.xml" path="/" exported="true"/>
+  </resources>
+  <publish name="06-PlayerView"/>
+</packageDescription>

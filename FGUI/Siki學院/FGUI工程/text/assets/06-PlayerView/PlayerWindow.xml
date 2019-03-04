@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="408,436">
+  <displayList>
+    <component id="n1_o0vw" name="frame" src="o0vwd" xy="0,0"/>
+    <graph id="n2_o0vw" name="n2" xy="72,81" size="249,294"/>
+    <component id="n3_o0vw" name="n3" src="o0vwg" xy="49,283"/>
+    <component id="n4_o0vw" name="n4" src="o0vwh" xy="312,286"/>
+  </displayList>
+</component>

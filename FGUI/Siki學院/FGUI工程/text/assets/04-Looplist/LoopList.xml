@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="800,600">
+  <displayList>
+    <list id="n0_m17f" name="n0" xy="31,48" size="738,467" layout="row" overflow="scroll" scroll="horizontal" margin="37,0,0,0" defaultItem="ui://13u80q6mm17f6">
+      <relation target="" sidePair="center-center,middle-middle"/>
+      <item icon="ui://13u80q6mm17f4"/>
+      <item icon="ui://13u80q6mm17f5"/>
+      <item icon="ui://13u80q6mm17f1"/>
+    </list>
+  </displayList>
+</component>

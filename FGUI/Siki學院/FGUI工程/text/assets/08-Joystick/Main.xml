@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="800,600">
+  <displayList>
+    <image id="n2_ja0i" name="JoystickCenter" src="ja0i1" xy="143,405">
+      <relation target="" sidePair="bottom-bottom"/>
+    </image>
+    <component id="n1_ja0i" name="Joystick" src="ja0i3" xy="93,354">
+      <relation target="" sidePair="bottom-bottom"/>
+    </component>
+    <graph id="n0_ja0i" name="JoystickTouchArea" xy="56,329" size="253,229" type="rect" lineColor="#00000000" fillColor="#00ffffff">
+      <relation target="" sidePair="bottom-bottom"/>
+    </graph>
+    <text id="n3_ja0i" name="n3" xy="477,78" size="116,50" fontSize="30" autoSize="none" text="Degree:"/>
+    <text id="n4_ja0i" name="n4" xy="579,82" size="190,39" fontSize="30" autoSize="height" text=""/>
+  </displayList>
+</component>

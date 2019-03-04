@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="800,600">
+  <displayList>
+    <component id="n0_uo52" name="n0" src="uo527" xy="280,420">
+      <ProgressBar max="100"/>
+    </component>
+    <component id="n1_uo52" name="n1" src="uo52c" xy="378,246">
+      <ComboBox title="设置时间" visibleItemCount="10" direction="down">
+        <item title="3S" value="3" icon="ui://199cz68quo52a"/>
+        <item title="10S" value="10" icon="ui://199cz68quo52a"/>
+      </ComboBox>
+    </component>
+  </displayList>
+</component>

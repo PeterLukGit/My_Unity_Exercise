@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="408,436">
+  <displayList>
+    <image id="n0_o0vw" name="n0" src="o0vw2" xy="0,0" size="408,436"/>
+    <graph id="n2_o0vw" name="dragArea" xy="23,11" size="351,411"/>
+    <image id="n3_o0vw" name="n3" src="o0vw7" xy="-9,47" size="410,380"/>
+    <component id="n1_o0vw" name="closeButton" src="o0vwe" xy="338,2" size="42,56"/>
+  </displayList>
+</component>

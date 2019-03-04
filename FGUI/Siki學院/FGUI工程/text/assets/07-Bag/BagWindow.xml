@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="615,387">
+  <displayList>
+    <component id="n0_g3vc" name="frame" src="g3vc3" xy="-1,0"/>
+    <list id="n1_g3vc" name="ItemList" xy="99,59" size="404,289" layout="flow_hz" overflow="scroll" defaultItem="ui://a3ymflkcg3vco">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+</component>

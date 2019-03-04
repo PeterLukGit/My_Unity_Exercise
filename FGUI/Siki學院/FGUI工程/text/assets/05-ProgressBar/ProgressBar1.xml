@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="277,32" extention="ProgressBar">
+  <displayList>
+    <image id="n1" name="n1" src="uo523" xy="0,0" size="277,32">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n2" name="bar" src="uo524" xy="23,-1" size="227,30"/>
+    <text id="n3" name="title" xy="15,4" size="255,21" fontSize="12" align="center" vAlign="middle" autoSize="none" text="">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <movieclip id="n4_uo52" name="n4" src="uo526" xy="239,-27">
+      <relation target="n2" sidePair="right-right"/>
+    </movieclip>
+  </displayList>
+  <ProgressBar/>
+</component>

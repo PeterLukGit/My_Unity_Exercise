@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="a3ymflkc" jpegQuality="80" compressPNG="true">
+  <resources>
+    <component id="g3vc0" name="Main.xml" path="/" exported="true"/>
+    <component id="g3vc2" name="BagWindow.xml" path="/" exported="true"/>
+    <component id="g3vc3" name="WindowFrame.xml" path="/" exported="true"/>
+    <image id="g3vc4" name="0.png" path="/" exported="true"/>
+    <image id="g3vc5" name="1.png" path="/" exported="true"/>
+    <image id="g3vc6" name="2.png" path="/" exported="true"/>
+    <image id="g3vc7" name="3.png" path="/" exported="true"/>
+    <image id="g3vc8" name="4.png" path="/" exported="true"/>
+    <image id="g3vc9" name="5.png" path="/" exported="true"/>
+    <image id="g3vca" name="8.png" path="/" exported="true"/>
+    <image id="g3vcb" name="btnimage.png" path="/" exported="true"/>
+    <image id="g3vcc" name="i0.png" path="/" exported="true"/>
+    <image id="g3vcd" name="i1.png" path="/" exported="true"/>
+    <image id="g3vce" name="i2.png" path="/" exported="true"/>
+    <image id="g3vcf" name="i3.png" path="/" exported="true"/>
+    <image id="g3vcg" name="i4.png" path="/" exported="true"/>
+    <image id="g3vch" name="i5.png" path="/" exported="true"/>
+    <image id="g3vci" name="i6.png" path="/" exported="true"/>
+    <image id="g3vcj" name="i7.png" path="/" exported="true"/>
+    <image id="g3vck" name="i8.png" path="/" exported="true"/>
+    <image id="g3vcl" name="i9.png" path="/" exported="true"/>
+    <movieclip id="g3vcm" name="quan.jta" path="/" exported="true"/>
+    <component id="g3vcn" name="ButtonClose.xml" path="/" exported="true"/>
+    <component id="g3vco" name="Item.xml" path="/" exported="true"/>
+    <component id="g3vcp" name="ItemView.xml" path="/" exported="true"/>
+    <component id="g3vcq" name="BagButton.xml" path="/" exported="true"/>
+  </resources>
+  <publish name="07-Bag"/>
+</packageDescription>

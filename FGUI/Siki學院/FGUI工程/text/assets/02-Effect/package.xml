@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="0wtb6lfn" jpegQuality="80" compressPNG="true">
+  <resources>
+    <image id="8ydnj" name="0000_+.png" path="/AddValue/"/>
+    <image id="8ydnk" name="0001_9.png" path="/AddValue/"/>
+    <image id="8ydnl" name="0002_8.png" path="/AddValue/"/>
+    <image id="8ydnm" name="0003_7.png" path="/AddValue/"/>
+    <image id="8ydnn" name="0004_6.png" path="/AddValue/"/>
+    <image id="8ydno" name="0005_5.png" path="/AddValue/"/>
+    <image id="8ydnp" name="0006_4.png" path="/AddValue/"/>
+    <image id="8ydnq" name="0007_3.png" path="/AddValue/"/>
+    <image id="8ydnr" name="0008_2.png" path="/AddValue/"/>
+    <image id="8ydns" name="0009_1.png" path="/AddValue/"/>
+    <image id="8ydnt" name="0010_0.png" path="/AddValue/"/>
+    <image id="8ydnu" name="h0.png" path="/AttackValue/"/>
+    <image id="8ydnv" name="h1.png" path="/AttackValue/"/>
+    <image id="8ydnw" name="h2.png" path="/AttackValue/"/>
+    <image id="8ydnx" name="h3.png" path="/AttackValue/"/>
+    <image id="8ydny" name="h4.png" path="/AttackValue/"/>
+    <image id="8ydnz" name="h5.png" path="/AttackValue/"/>
+    <image id="8ydn10" name="h6.png" path="/AttackValue/"/>
+    <image id="8ydn11" name="h7.png" path="/AttackValue/"/>
+    <image id="8ydn12" name="h8.png" path="/AttackValue/"/>
+    <image id="8ydn13" name="h9.png" path="/AttackValue/"/>
+    <image id="8ydn14" name="power.png" path="/"/>
+    <image id="8ydn15" name="red.png" path="/"/>
+    <image id="8ydn16" name="100010.png" path="/Fire/"/>
+    <image id="8ydn17" name="100011.png" path="/Fire/"/>
+    <image id="8ydn18" name="100012.png" path="/Fire/"/>
+    <image id="8ydn19" name="100013.png" path="/Fire/"/>
+    <image id="8ydn1a" name="100014.png" path="/Fire/"/>
+    <image id="8ydn1b" name="100015.png" path="/Fire/"/>
+    <image id="8ydn1c" name="100016.png" path="/Fire/"/>
+    <image id="8ydn1d" name="100017.png" path="/Fire/"/>
+    <image id="8ydn1e" name="100018.png" path="/Fire/"/>
+    <image id="8ydn1f" name="100019.png" path="/Fire/"/>
+    <image id="8ydn1g" name="100020.png" path="/Fire/"/>
+    <image id="8ydn1h" name="100021.png" path="/Fire/"/>
+    <image id="8ydn1i" name="100022.png" path="/Fire/"/>
+    <image id="8ydn1j" name="100023.png" path="/Fire/"/>
+    <image id="8ydn1k" name="100024.png" path="/Fire/"/>
+    <image id="8ydn1l" name="100025.png" path="/Fire/"/>
+    <image id="8ydn1m" name="100026.png" path="/Fire/"/>
+    <image id="8ydn1n" name="100027.png" path="/Fire/"/>
+    <image id="8ydn1o" name="100028.png" path="/Fire/"/>
+    <image id="8ydn1p" name="100029.png" path="/Fire/"/>
+    <image id="8ydn1q" name="100030.png" path="/Fire/"/>
+    <image id="8ydn1r" name="100031.png" path="/Fire/"/>
+    <image id="8ydn1s" name="100000.png" path="/Fire/"/>
+    <image id="8ydn1t" name="100001.png" path="/Fire/"/>
+    <image id="8ydn1u" name="100002.png" path="/Fire/"/>
+    <image id="8ydn1v" name="100003.png" path="/Fire/"/>
+    <image id="8ydn1w" name="100004.png" path="/Fire/"/>
+    <image id="8ydn1x" name="100005.png" path="/Fire/"/>
+    <image id="8ydn1y" name="100006.png" path="/Fire/"/>
+    <image id="8ydn1z" name="100007.png" path="/Fire/"/>
+    <image id="8ydn20" name="100008.png" path="/Fire/"/>
+    <image id="8ydn21" name="100009.png" path="/Fire/"/>
+    <font id="8ydn22" name="addValue.fnt" path="/AddValue/" exported="true"/>
+    <font id="8ydn23" name="attackValue.fnt" path="/AttackValue/" exported="true"/>
+    <movieclip id="8ydn24" name="Fire.jta" path="/Fire/"/>
+    <component id="8ydn25" name="AddValue.xml" path="/" exported="true"/>
+    <image id="8ydn26" name="b4.png" path="/"/>
+    <image id="8ydn27" name="b5.png" path="/"/>
+    <component id="8ydn28" name="Component1.xml" path="/" exported="true"/>
+    <component id="8ydn29" name="Button1.xml" path="/" exported="true"/>
+  </resources>
+  <publish name="Package1"/>
+</packageDescription>

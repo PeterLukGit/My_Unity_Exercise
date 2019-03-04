@@ -180,3 +180,23 @@ Unity NGUI 老師範例檔
 
 http://www.taikr.com/my/course/34
 
+
+## 16.FairyGUI (My_Unity_Exercise\FGUI)
+
+FGUI，跟UGUI NGUI，不同是UGUI NGUI是在Unity中是以"一個物件(組件)"為原則，最多再加上空物件整理，
+
+並且事件是寫好類似UnityEvent扔進去就可以，
+
+FGUI，是以一個個"場景"(就是UI的整體布局)，雖然可以將小組件(例:Button)包好後再放入大組件(例:列表視窗)製作，
+
+而程式部分，除部分UI FGUI會自動用好(例:關閉按鈕)，剩下的就要自己寫，但目前看來整體不難，難在資料傳遞以及動態新增UI(老師沒教)
+
+FGUI在Unity中是UI攝影機一個，而UI場景是調用後才生成，並帶入顯示
+
+一切著作權歸 FairyGUI官方、Siki學院所有
+
+官網
+www.fairygui.com
+
+Siki學院
+http://www.sikiedu.com/course/139

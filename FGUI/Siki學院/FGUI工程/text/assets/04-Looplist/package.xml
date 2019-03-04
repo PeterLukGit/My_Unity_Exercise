@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="13u80q6m" jpegQuality="80" compressPNG="true">
+  <resources>
+    <component id="m17f0" name="LoopList.xml" path="/" exported="true"/>
+    <image id="m17f1" name="n3.png" path="/" exported="true"/>
+    <image id="m17f2" name="n4.png" path="/" exported="true"/>
+    <image id="m17f3" name="n5.png" path="/" exported="true"/>
+    <image id="m17f4" name="n1.png" path="/" exported="true"/>
+    <image id="m17f5" name="n2.png" path="/" exported="true"/>
+    <component id="m17f6" name="Button1.xml" path="/"/>
+  </resources>
+  <publish name="04-Looplist"/>
+</packageDescription>

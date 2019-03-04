@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="85,25" extention="Button">
+  <Button mode="Radio"/>
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver"/>
+  <displayList>
+    <image id="n1" src="uo528" name="n1" xy="0,0">
+      <relation target="" sidePair="width,height"/>
+    </image>
+    <text id="n2" name="title" xy="0,0" size="85,25" fontSize="12" autoSize="none" vAlign="middle" singleLine="true">
+      <relation target="" sidePair="width,height"/>
+    </text>
+  </displayList>
+</component>

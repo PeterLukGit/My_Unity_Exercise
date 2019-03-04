@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="800,600">
+  <controller name="c1" pages="0,,1," selected="0"/>
+  <displayList>
+    <component id="n0_hx3e" name="n0" src="hx3e4" xy="600,400"/>
+    <graph id="n1_hx3e" name="n1" xy="0,0" size="800,400" group="n7_hx3e" alpha="0.3" type="rect" lineSize="0" fillColor="#ff000000"/>
+    <graph id="n2_hx3e" name="n2" xy="0,499" size="806,117" group="n7_hx3e" alpha="0.3" type="rect" lineSize="0" fillColor="#ff000000"/>
+    <graph id="n3_hx3e" name="n3" xy="0,400" size="599,99" group="n7_hx3e" alpha="0.3" type="rect" lineSize="0" fillColor="#ff000000"/>
+    <graph id="n4_hx3e" name="n4" xy="692,400" size="108,99" group="n7_hx3e" alpha="0.3" type="rect" lineSize="0" fillColor="#ff000000"/>
+    <movieclip id="n6_hx3e" name="n6" src="hx3e2" xy="584,389" group="n7_hx3e"/>
+    <group id="n7_hx3e" name="n7" xy="0,0" size="806,616" advanced="true" collapsed="true">
+      <gearDisplay controller="c1" pages="1"/>
+    </group>
+    <movieclip id="n5_hx3e" name="n5" src="hx3e3" xy="-151,103">
+      <gearDisplay controller="c1" pages="0,1"/>
+      <gearXY controller="c1" pages="1" values="498,428" default="-151,103" tween="true"/>
+    </movieclip>
+  </displayList>
+</component>

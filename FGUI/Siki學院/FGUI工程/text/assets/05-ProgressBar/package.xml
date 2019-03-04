@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="199cz68q" jpegQuality="80" compressPNG="true">
+  <resources>
+    <component id="uo520" name="progressbar.xml" path="/" exported="true"/>
+    <image id="uo521" name="b5_png.png" path="/" exported="true"/>
+    <image id="uo522" name="b7(2)_png.png" path="/" exported="true"/>
+    <image id="uo523" name="caiji.png" path="/" exported="true"/>
+    <image id="uo524" name="caiji2.png" path="/" exported="true"/>
+    <image id="uo525" name="k20.png" path="/" exported="true"/>
+    <movieclip id="uo526" name="pet.jta" path="/" exported="true"/>
+    <component id="uo527" name="ProgressBar1.xml" path="/" exported="true"/>
+    <image id="uo528" name="b6.png" path="/" exported="true"/>
+    <image id="uo529" name="b7.png" path="/" exported="true"/>
+    <component id="uo52a" name="ComboBox1_item.xml" path="/" exported="true"/>
+    <component id="uo52b" name="ComboBox1_popup.xml" path="/" exported="true"/>
+    <component id="uo52c" name="ComboBox1.xml" path="/" exported="true"/>
+  </resources>
+  <publish name="05-ProgressBar"/>
+</packageDescription>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="100,100" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n3_g3vc" name="BG" src="g3vc5" xy="5,5"/>
+    <text id="n4_g3vc" name="title" xy="13,-50" size="73,37" visible="false" fontSize="12" autoSize="none" text=""/>
+    <loader id="n5_g3vc" name="icon" xy="5,5" size="90,90"/>
+    <image id="n1" name="button" src="g3vc7" xy="0,0">
+      <gearDisplay controller="button" pages="0,2"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n2" name="n2" src="g3vc6" xy="-4,-4">
+      <gearDisplay controller="button" pages="1,3"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+  </displayList>
+  <Button/>
+</component>

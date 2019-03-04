@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="800,600">
+  <displayList>
+    <component id="n0_g3vc" name="BagButton" src="g3vcq" xy="679,481"/>
+    <movieclip id="n1_g3vc" name="n1" src="g3vcm" xy="669,473"/>
+    <component id="n2_g3vc" name="playerView" src="g3vcp" xy="37,472"/>
+  </displayList>
+</component>
