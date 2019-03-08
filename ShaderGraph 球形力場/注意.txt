@@ -1,0 +1,24 @@
+這是網路教學，原為ShaderForge 想改成ShaderGraph 結果發現作者有提供 ShaderGraph 節點，
+
+所以到後面就做出來，然後改改幾個小地方學學
+
+這邊最主要是 ShaderGraph Normal 跟 ShaderForge Normal 是不一樣的
+
+ShaderForge 可以用 Normal 進行位移
+
+而ShaderGraph 是利用 Position 進行位移 ，所以這邊 Normal 是沒用的 要改成 Position + Normal 來達成效果
+
+而 Noise 部分 就必須計算過 平面UV 是不行的 要用Position 或是 Normal 帶入 UV運算才行
+
+PS: 球是炭20球 很好用
+
+一切著作權歸原作者所有
+
+原作者
+
+https://www.youtube.com/watch?v=i2w0p_mV8_g&t=113s
+ 
+Position + Normal 變形
+
+https://www.youtube.com/watch?v=vh85pzT959M
+
