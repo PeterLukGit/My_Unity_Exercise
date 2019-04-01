@@ -226,3 +226,30 @@ https://www.youtube.com/watch?v=i2w0p_mV8_g&t=113s
 Position + Normal 變形
 
 https://www.youtube.com/watch?v=vh85pzT959M
+
+## 18.ShaderGraph 球形 (My_Unity_Exercise\ShaderGraph 球)
+
+這是在 Youtube 上 Shader Forge 製作
+
+圓滑變到菱角效果做得怪怪的(預估是 Object Normal算圖 出現誤差(跟圖形Normal比較的話))
+
+基本都做出來了，算圖用xNormal 3.19.3 (x64)計算
+
+把高低模進去算出來的，但是Normal有點誤差
+
+把模型UV重新製作
+
+UV0 是亂亂UV 計算 Normal
+
+UV1 是普通UV 
+
+UV2 是一顆球UV，用作Time漸層
+
+一切著作權歸原作者所有
+
+https://www.youtube.com/watch?v=_IwlpwEJ3lE&list=PLHkZsIwT_SixXK95l0IHaCTwaRKqzGYiC
+
+
+
+
+

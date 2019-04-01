@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Assets/MoveContents/Unknown06/Unknown06.unity
+- path: Assets/Assets/MoveContents/08_MatCap/08_MatCap.unity
   isLoaded: 1
   isActive: 1
