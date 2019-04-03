@@ -250,6 +250,22 @@ UV2 是一顆球UV，用作Time漸層
 https://www.youtube.com/watch?v=_IwlpwEJ3lE&list=PLHkZsIwT_SixXK95l0IHaCTwaRKqzGYiC
 
 
+## 19.Unity如何制作弹孔效果 (My_Unity_Exercise\Unity如何制作弹孔效果)
+
+Unity Taiwan 教學
+
+在低清通道下
+
+就是彈孔圖片在射線位置，同時將旋轉設定為該位置Normal方向
+
+用高清通道(HDRP)
+
+用貼花組件就可以了
+
+一切著作權歸原作者所有
+
+https://www.youtube.com/watch?v=9Z3VMXJUPw4
+
 
 
 
