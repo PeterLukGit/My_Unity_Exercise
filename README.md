@@ -267,5 +267,14 @@ Unity Taiwan 教學
 https://www.youtube.com/watch?v=9Z3VMXJUPw4
 
 
+## 20.ShaderGraph 碰觸邊緣發亮 (My_Unity_Exercise\ShaderGraph 碰觸邊緣發亮)
+
+原理看不懂
+
+只能大略知道是，深度節點，螢幕節點，相減，之後就看不懂
+
+一切著作權歸原作者所有
+
+https://www.youtube.com/watch?v=ayd8L6ZyCvw
 
 

@@ -1,0 +1,4 @@
+sceneSetups:
+- path: "Assets/Intersection Material/\u6210\u679C.unity"
+  isLoaded: 1
+  isActive: 1
