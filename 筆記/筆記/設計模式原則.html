@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>設計模式原則</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<p><font face="微软雅黑" color="black" size="5"></p>
+<p><font face="微软雅黑" color="blue" size="16">
+設計模式原則
+</font></p>
+<!--
+标签（空格分隔）： 設計模式
+ -->
+<hr />
+<h1>設計基礎</h1>
+<h2>1.抽象</h2>
+<ul>
+<li>
+<p>就是C＃將類給抽象化就是這只是類的模版，無法實例化</p>
+</li>
+<li>
+<p>抽象與虛擬差異在於，抽象需要override 重寫，虛擬方法可以先寫好，要不要override 隨意</p>
+</li>
+</ul>
+<blockquote>
+<p>詳見 <a href="http://jimmy0222.pixnet.net/blog/post/37271702">(C#) 區分 abstract、virtual、override 和 new</a></p>
+<p>abstract =&gt; 抽象方法。
+virtual =&gt; 虛擬方法。
+override =&gt; 覆蓋基礎類別方法。
+new =&gt; 隱藏基礎類別方法。
+override 和 new 有時都叫覆寫基礎類別方法。</p>
+</blockquote>
+<h2>2.封裝</h2>
+<ul>
+<li>
+<p>就是將數據封起來，避免被其他類引用，有以下這些方法，
+  但實際上有其他方法，EX：用Void來取得數據</p>
+</li>
+<li>
+<p>而且封裝在物件導向有時不是指數據封裝，是指類別封裝，將類別關起來</p>
+</li>
+</ul>
+<blockquote>
+<p>public：所有對象都可以訪問；
+private：對象本身在對象內部可以訪問；
+protected：只有該類對象及其子類對象可以訪問
+internal：同一個程式集的對象可以訪問；
+protected internal：訪問限於當前程式集或派生自包含類的類型。</p>
+<p>get {return <em>firstName;}set {</em>firstName = value;} &lt;=利用函式取得封裝數據</p>
+</blockquote>
+<h2>3.繼承</h2>
+<ul>
+<li>指的是子類繼承父類，而子類有父類所有非私有的數據，就是把父類的程式碼塞到子類裡</li>
+<li>C＃ 只能單一繼承</li>
+</ul>
+<p>```csharp
+public class A //父類
+{
+Protected int value = 10;
+}</p>
+<p>public class B : A//子類
+{
+public int GetValue(){return this.value;}
+}</p>
+<p>ClassB繼承後實際上程式碼變成這樣
+public class B //子類
+{
+protected int value = 10;//這是父類的
+public int GetValue(){return this.value;}//這是子類的
+}
+```</p>
+<h2>4.多態</h2>
+<ul>
+<li>
+<p>就是一個類可以有很多種型態
+EX:當子類繼承父類，宣告父類陣列時，子類也能放進去，因為子類有父類的型態
+EX2:當類繼承介面Interface 宣告Interface 陣列時該類也能放進去，因為該類有Interface 型態</p>
+</li>
+<li>
+<p>還有就是Void（函示）多態，只要後面接的變數不一樣，函示名字可以一樣
+<code>EX: 
+Test()
+Test(int a)
+Test(int a,string b)</code></p>
+</li>
+</ul>
+<hr />
+<h1>設計模式7大原則</h1>
+<h2>1.開閉原則</h2>
+<blockquote>
+<p>詳見 <a href="https://blog.csdn.net/qiulongtianshi/article/details/7570021">程序员必备的七大面向对象设计原则（一）</a></p>
+</blockquote>
+<h3><strong>定義 : 對擴展開放，對修改關閉</strong></h3>
+<h4>原則:</h4>
+<ol>
+<li>開閉原則由Bertrand Meyer於1988年提出，它是面向對象設計中最重要的原則之一。</li>
+<li>在開閉原則的定義中，軟體實體可以指一個軟體模組、一個由多個類組成的局部結構或一個獨立的類。</li>
+<li>抽象化是開閉原則的關鍵。</li>
+<li>開閉原則還可以通過一個更加具體的“對可變性封裝原則”來描述，對可變性封裝原則(Principle of Encapsulation of Variation,EVP)要求找到系統的可變因素並將其封裝起來。</li>
+</ol>
+<h4>案例:</h4>
+<p><img src="https://github.com/PeterLukGit/My_Unity_Exercise/blob/master/%E7%AD%86%E8%A8%98/%E7%AD%86%E8%A8%98%E5%9C%96%E7%89%87/%E9%96%8B%E9%96%89%E5%8E%9F%E5%89%87/00.PNG" alt="圖一" /></p>
+<p><img src="https://github.com/PeterLukGit/My_Unity_Exercise/blob/master/%E7%AD%86%E8%A8%98/%E7%AD%86%E8%A8%98%E5%9C%96%E7%89%87/%E9%96%8B%E9%96%89%E5%8E%9F%E5%89%87/01.PNG" alt="圖二" /></p>
+<h5>對比分析</h5>
+<ul>
+<li>
+<p>圖（1）：客戶端的一個方法直接調用加法類，但是我想添加一個減法類，你就會發現添加減法類就得改變加法類中代碼（用switch語句實現），這就違背了“開閉原則”，於是我們就應該重新重構。</p>
+</li>
+<li>
+<p>如圖（2）在這個圖中我們添加了一個運算類的父類，這樣我們再添加減法類的時候就不用修改客戶端類。</p>
+</li>
+</ul>
+<!-- 
+# **開閉原則總結：**
+# **面對需求，對程式的改動是通過增加新代碼進行的，而不是改變原來的代碼。**
+ -->
+<p><b>
+<font face="微软雅黑" color="red" size="10">
+開閉原則總結：<br>
+面對需求，對程式的改動是通過增加新代碼進行的，而不是改變原來的代碼
+</font>
+</b></p>
+<hr />
+<h2>2.依賴倒轉原則</h2>
+<blockquote>
+<p>參考附錄(一)高層模組和底層模組</p>
+</blockquote>
+<ol>
+<li>
+<p>依賴倒轉原則定義</p>
+<ul>
+<li>高層模組不應該依賴低層模組，它們都應該依賴抽象。抽象不應該依賴於細節，細節應該依賴於抽象。</li>
+<li><strong>要針對介面編程，不要針對實現編程。</strong></li>
+</ul>
+</li>
+<li>
+<p>依賴倒轉原則分析</p>
+<ul>
+<li>
+<p>簡單來說，依賴倒轉原則就是指：代碼要依賴於抽象的類，而不要依賴於具體的類；要針對介面或抽象類編程，而不是針對具體類編程。</p>
+</li>
+<li>
+<p>實現開閉原則的關鍵是抽象化，並且從抽象化導出具體化實現，如果說開閉原則是面向對象設計的目標的話，那麼依賴倒轉原則就是面向對象設計的主要手段。</p>
+</li>
+<li>
+<p>依賴倒轉原則的常用實現方式之一是在代碼中使用抽象類，而將具體類放在配置檔中。</p>
+</li>
+<li>
+<p>類之間的耦合 1.零耦合關係 2.具體耦合關係  3.抽象耦合關係。依賴倒轉原則要求客戶端依賴於抽象耦合，以抽象方式耦合是依賴倒轉原則的關鍵。</p>
+</li>
+<li>
+<p>依賴注入:</p>
+<ul>
+<li>構造注入：通過構造函數注入實例變數</li>
+<li>設值注入：通過Setter方法注入實例變數</li>
+<li>介面注入：通過介面方法注入實例變數</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h1>附錄</h1>
+<h2>附錄(一)高層模組和底層模組</h2>
+<h3>依賴倒置原則裏面，什麼叫高層模組和底層模組？</h3>
+<blockquote>
+<p>作者：蓋拉斯
+鏈接：https://www.zhihu.com/question/58471765/answer/311356521
+來源：知乎
+著作權歸作者所有。商業轉載請聯繫作者獲得授權，非商業轉載請注明出處。</p>
+</blockquote>
+<h4><strong>可以簡單的理解：調用者為高層，被調用者為低層。</strong></h4>
+<p>關於這個模式，舉個現實生活中的例子：
+某地市場上有很多肉店。你想在這裏開一家餃子館，由於當地法律規定餃子店不能自己剁肉，必須使用肉店提供的剁餡服務，所以你的採購員每天去肉店下單買肉，然後等現場剁成肉餡後再帶回店裏做成豬肉餃子。</p>
+<p>餃子店生意還不錯，但是你是個有理想的店主，不甘心賣一輩子豬肉餃子，所以你決定……拓展一下店裏的餃子品種。經過一番調研，你發現有三家肉店的老闆剛好家裏種了白菜、芹菜和韭菜——所以這三家還分別供應白菜肉餡、芹菜肉餡和韭菜肉餡。於是你在菜單上就增加了這三種蔬菜肉餡的餃子。由於你的採購員一天最多只能跑兩個地兒，而現在每天要跑三家肉店，一個人忙不過來，於是你不得不新招了一位採購員。</p>
+<p>過了一陣，某肉店老闆參加了一場設計模式，哦不，商業模式的培訓，回去後就推出了一項新的服務：可以允許你自己把任何蔬菜類的食材帶過去，然後幫你做對應的蔬菜肉餡。你作為一個奸商（誤）一聽到這消息高興壞了，現在採購員只需要跑一下菜市場，然後跑一下這家肉店，就能滿足店內的三種肉餡需要了。甚至以後想拓展更多種類的肉餡也沒有什麼額外負擔。所以新招的採購員分分鐘就被你辭退了。</p>
+<p>這就是依賴倒置。你的餃子店是高層模組，肉店則是低層模組。
+混合肉餡依賴一種蔬菜食材，但原先的店都是自己準備固定的某種蔬菜，所以每當你想多賣一種蔬菜肉餡餃子，都得先看看有沒有提供這種餃子餡的肉店。但後來的這家肉店，把做肉餡所依賴的蔬菜食材交給你來決定，所以你的採購方案和菜單制訂一下子就變得非常靈活，任何蔬菜肉餡，只要菜市場能買到對應的蔬菜，你就可以交給這家店幫你做好。通過這種模式，一家肉店就解決了你的需求。</p>
+<p></font></p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
