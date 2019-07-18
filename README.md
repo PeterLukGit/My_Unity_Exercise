@@ -1,4 +1,4 @@
-﻿# My_Unity_Exercise
+# My_Unity_Exercise
 
 # 這裡是存放個人Unity練習檔，部分圖檔或是資料，著作權歸原作者所有如有侵權請告之
 
@@ -277,4 +277,27 @@ https://www.youtube.com/watch?v=9Z3VMXJUPw4
 
 https://www.youtube.com/watch?v=ayd8L6ZyCvw
 
+## 21.Unity FSM 有限狀態機 (My_Unity_Exercise\Unity FSM 有限狀態機)
 
+實際上整體程式碼很簡單
+範例中一堆程式碼，大部分都是防呆防例外
+這結構精妙之處就再
+Dictionary<Transition, StateID>
+List<FSMState> states
+因為有Dictionary的變數再，就不必寫很多IF判斷直接把判斷給省去，因為存在再Dictionary就是轉換剩下都不是
+這樣只要再Enum裡寫好Transition和State，就可以自動切換
+而只要在函式中寫好防錯，基本就能好好運行，
+不必說以前學的，是把State繼承一個接口，雖然這寫法比較簡單，但判斷會變多
+這種方法雖然不直觀但框架弄好，剩下只要寫Update裡該做什麼
+切換就呼叫PerformTransition就可以
+
+一切著作權歸原作者所有
+
+原文
+http://wiki.unity3d.com/index.php/Finite_State_Machine
+
+翻譯
+https://www.twblogs.net/a/5b8cfa142b7177188338198e
+
+畫圖
+https://www.draw.io/
