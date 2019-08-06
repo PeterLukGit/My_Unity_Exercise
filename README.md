@@ -301,3 +301,19 @@ https://www.twblogs.net/a/5b8cfa142b7177188338198e
 
 畫圖
 https://www.draw.io/
+
+## 21.Unity ECS練習 (My_Unity_Exercise\ECS)
+
+利用ECS製作方塊波浪，只應用到基礎，沒有用到Job之類的
+
+一切著作權歸原作者所有
+
+方塊波浪
+https://www.youtube.com/watch?v=gdSFs0PeBNQ
+
+ECS基礎
+https://www.youtube.com/watch?v=ILfUuBLfzGI
+
+Unity Taiwan ECS
+https://www.youtube.com/watch?v=Kn7RtsTI_wI&t=423s
+https://www.youtube.com/watch?v=qILR9gLzmVA&t=240s
