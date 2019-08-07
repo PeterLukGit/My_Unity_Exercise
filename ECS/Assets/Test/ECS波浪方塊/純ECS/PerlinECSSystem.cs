@@ -10,8 +10,6 @@ using Unity.Collections;
 
 public class PerlinECSSystem : ComponentSystem
 {
-
-
     protected override void OnUpdate()
     {
         //尋找有 Translation PerlinComponent 兩個組件的Entities

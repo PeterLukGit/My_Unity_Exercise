@@ -55,7 +55,6 @@ public class PerlinECSIns : MonoBehaviour
 
         //確定方塊的XY軸
         int array_x, array_y;
-
         //修正Entity陣列裡Entity的組件數據
         for (int i = 0; i < entitieArray.Length; i++)
         {
@@ -67,8 +66,13 @@ public class PerlinECSIns : MonoBehaviour
             perlinNoise = Mathf.PerlinNoise(array_x * refinement, array_y * refinement);
 
             ////修正組件數據
-            entityManager.SetComponentData(entity, new Translation { Value = new Unity.Mathematics.float3(array_x, perlinNoise * multiplier, array_y) });
-            entityManager.SetComponentData(entity, new PerlinComponent  { high = multiplier, PerlinVec2 = new Vector2 (array_x * refinement, array_y * refinement) });
+            entityManager.SetComponentData(entity, 
+                new Translation {
+                    Value = new Unity.Mathematics.float3(array_x, perlinNoise * multiplier, array_y) });
+
+            entityManager.SetComponentData(entity, 
+                new PerlinComponent  { high = multiplier,
+                    PerlinVec2 = new Vector2 (array_x * refinement, array_y * refinement) });
 
             //設定"共用組件"(Set"Shared"ComponentData)
             //因為全部Entity都有RenderMesh(渲染組件)，每個都渲染同一個模型，用"共用組件"省資源
