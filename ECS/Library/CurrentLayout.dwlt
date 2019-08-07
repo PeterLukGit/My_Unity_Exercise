@@ -113,10 +113,10 @@ MonoBehaviour:
     y: 30
     width: 1344
     height: 707
-  m_MinSize: {x: 917, y: 444}
-  m_MaxSize: {x: 22012, y: 10022}
+  m_MinSize: {x: 915, y: 444}
+  m_MaxSize: {x: 22010, y: 10022}
   vertical: 0
-  controlID: 41
+  controlID: 106
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 444}
   m_MaxSize: {x: 4002, y: 8044}
   vertical: 1
-  controlID: 18
+  controlID: 112
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -187,8 +187,8 @@ MonoBehaviour:
     y: 343
     width: 629
     height: 364
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 222}
+  m_MaxSize: {x: 4002, y: 4022}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -495,9 +495,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: 0, z: 0}
+    m_Target: {x: 1.0935333, y: -0.12114112, z: -1.0087419}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0}
+    m_Value: {x: 1.0935333, y: -0.12114112, z: -1.0087419}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -530,9 +530,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_Size:
-    m_Target: 30.855762
+    m_Target: 29.549942
     speed: 2
-    m_Value: 30.855762
+    m_Value: 27.110039
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -588,7 +588,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 8efbffff
+      m_ExpandedIDs: 76efffffc4effffffcefffff6af0ffffb2f0ffff4ef2ffff12f8ffff7afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -649,19 +649,20 @@ MonoBehaviour:
     m_SceneHandles: 
     m_ShowAllHits: 0
     m_SearchArea: 1
-    m_Folders: []
+    m_Folders:
+    - "Assets/Test/ECS\u65B9\u584A\u79FB\u52D5"
   m_ViewMode: 0
   m_StartGridSize: 64
   m_LastFolders: []
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\Peter\Desktop\ECS
+  m_LastProjectPath: E:\DownLoadFolder\Github\My_Unity_Exercise\ECS
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 88400000
     m_LastClickedID: 16520
-    m_ExpandedIDs: 000000000a2f00005a30000076300000bc32000026330000de330000
+    m_ExpandedIDs: 00000000162f00006630000082300000c832000032330000e6330000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -689,7 +690,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff000000000a2f00005a30000076300000bc32000026330000de330000
+    m_ExpandedIDs: ffffffff00000000162f0000542f000066300000c832000032330000e6330000fc330000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

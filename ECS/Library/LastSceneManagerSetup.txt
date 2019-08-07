@@ -1,5 +1,5 @@
 sceneSetups:
-- path: "Assets/Test/ECS\u6CE2\u6D6A\u65B9\u584A/ECS_version.unity"
+- path: "Assets/Test/ECS\u65B9\u584A\u79FB\u52D5/ECS_cube_move.unity"
   isLoaded: 1
   isActive: 1
   isSubScene: 0
