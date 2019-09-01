@@ -325,3 +325,24 @@ Job System 練習，並未加入ECS
 Job System
 https://www.youtube.com/watch?v=C56bbgtPr_w
 
+## 24.Unity ECS練習2  2D渲染 (My_Unity_Exercise\ECS\ECS 2D渲染)
+
+ECS並沒有針對2D有特殊設計，所以要在ECS使用2D必須用Mesh渲染出2D
+
+生成Mesh 因為ECS不支援2D Sprite
+所以要用3DMesh來渲染
+
+Mesh生成分三步驟
+1. 設定點（就是點在世界座標上的位置）
+2. 設定UV（就是UV，就是那三角形對著的UV平面（應該））
+3. 設定渲染的三角形，把第一步驟的點，依照順序渲染出來（要照順時鐘渲染），當成是設定渲染的三角面
+
+ECS 2D
+https://www.youtube.com/watch?v=6eV9NR3Vb9U
+
+Mesh 渲染
+https://blog.csdn.net/ecidevilin/article/category/9266800
+https://blog.csdn.net/ecidevilin/article/details/52443127
+https://blog.csdn.net/ecidevilin/article/details/52456107
+https://www.jianshu.com/p/7cd99a05cfea
+https://www.cnblogs.com/jeason1997/p/4825981.html
