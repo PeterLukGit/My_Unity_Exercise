@@ -346,3 +346,13 @@ https://blog.csdn.net/ecidevilin/article/details/52443127
 https://blog.csdn.net/ecidevilin/article/details/52456107
 https://www.jianshu.com/p/7cd99a05cfea
 https://www.cnblogs.com/jeason1997/p/4825981.html
+
+## 25.Unity Job練習2  Job純數據輸出 (My_Unity_Exercise\Job System\Job System2)
+
+
+ 講解
+因為Job工作完後資料並沒保存（看起來是.....）
+所以要用在Job外的陣列來存放
+
+網址
+https://www.youtube.com/watch?v=YBrCR9rUOaA

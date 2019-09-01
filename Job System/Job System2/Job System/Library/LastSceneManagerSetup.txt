@@ -1,0 +1,5 @@
+sceneSetups:
+- path: "Assets/05Job\u7DDA\u7A0B\u7372\u5F97\u6578\u64DA/Jobs_GetOutput/Jobs_GetOutput.unity"
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0
