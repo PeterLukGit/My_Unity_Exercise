@@ -302,7 +302,7 @@ https://www.twblogs.net/a/5b8cfa142b7177188338198e
 畫圖
 https://www.draw.io/
 
-## 22.Unity ECS練習 (My_Unity_Exercise\ECS)
+## 22.Unity ECS練習 (My_Unity_Exercise\ECS 方塊波浪)
 
 利用ECS製作方塊波浪，只應用到基礎，沒有用到Job之類的
 
@@ -356,3 +356,17 @@ https://www.cnblogs.com/jeason1997/p/4825981.html
 
 網址
 https://www.youtube.com/watch?v=YBrCR9rUOaA
+
+## 26.Unity ECS練習3  追蹤目標 (My_Unity_Exercise\ECS\ECS 追蹤目標)
+
+講解
+就是方塊追蹤目標
+主要講解Tag以及刪除增加組件
+
+
+網址
+https://www.youtube.com/watch?v=t11uB7Gl6m8
+https://unitycodemonkey.com/video.php?v=t11uB7Gl6m8
+
+https://docs.unity3d.com/Packages/com.unity.entities@0.0/api/Unity.Entities.EntityManager.html
+
