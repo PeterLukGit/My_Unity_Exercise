@@ -1,0 +1,5 @@
+﻿  WorkManager.cpp
+c:\users\peter\desktop\職工管理系統\職工管理系統\employee.h(5): warning C4067: 未預期的語彙基元，接著前置處理器指示詞 - 必須是新行
+c:\users\peter\desktop\職工管理系統\職工管理系統\manager.h(5): warning C4067: 未預期的語彙基元，接著前置處理器指示詞 - 必須是新行
+c:\users\peter\desktop\職工管理系統\職工管理系統\boss.h(5): warning C4067: 未預期的語彙基元，接著前置處理器指示詞 - 必須是新行
+  職工管理系統.vcxproj -> C:\Users\Peter\Desktop\職工管理系統\Debug\職工管理系統.exe

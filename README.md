@@ -370,3 +370,11 @@ https://unitycodemonkey.com/video.php?v=t11uB7Gl6m8
 
 https://docs.unity3d.com/Packages/com.unity.entities@0.0/api/Unity.Entities.EntityManager.html
 
+## 27.C++練習3  職工管理系統 (My_Unity_Exercise\C++練習\職工管理系統)
+
+
+網址
+
+https://www.bilibili.com/video/BV1et411b73Z?p=150
+
+https://github.com/AnkerLeng/Cpp-0-1-Resource
