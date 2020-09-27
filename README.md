@@ -378,3 +378,22 @@ https://docs.unity3d.com/Packages/com.unity.entities@0.0/api/Unity.Entities.Enti
 https://www.bilibili.com/video/BV1et411b73Z?p=150
 
 https://github.com/AnkerLeng/Cpp-0-1-Resource
+
+## 28. Python 製作遊戲(使用Pygame庫)(My_Unity_Exercise\pygame)
+
+
+網址
+
+https://www.bilibili.com/video/BV19t411m7uU?p=34
+
+第一版書
+
+https://www.books.com.tw/products/CN11362966
+
+https://github.com/ehmatthes/pcc
+
+第二版
+
+https://www.books.com.tw/products/0010856350
+
+https://github.com/ehmatthes/pcc_2e
