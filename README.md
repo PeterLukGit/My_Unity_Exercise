@@ -397,3 +397,19 @@ https://github.com/ehmatthes/pcc
 https://www.books.com.tw/products/0010856350
 
 https://github.com/ehmatthes/pcc_2e
+
+## 29. visual effect graph案例(My_Unity_Exercise\visual effect graph案例)
+
+visual effect graph案例，
+
+[教學來源](https://www.youtube.com/watch?v=LhvnIOlmXMM)
+
+[Visual Effect Graph快速上手指南](https://medium.com/akatsuki-taiwan-technology/unity-visual-effect-graph快速上手指南-a1906346ed30)
+
+[粒子物理碰撞(5:32秒)](https://www.youtube.com/watch?v=w56xGS5P_X8)
+
+[煙火](https://www.bilibili.com/video/BV14E411c76W/?spm_id_from=333.788.videocard.0)
+
+[跟隨粒子教學(2:42秒)](https://www.youtube.com/watch?v=3EsITXwhlF4&list=PL-05SQhI5rIaX0Mlt0LHBc4QpJx5KtHhC&index=5)
+
+[黑洞](https://www.youtube.com/watch?v=FlE8e1JwVzs)
